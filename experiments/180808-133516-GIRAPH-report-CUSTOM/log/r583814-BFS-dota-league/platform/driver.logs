@@ -1,0 +1,8 @@
+StartTime: 1533736740906
+Runner executing benchmark r583814.
+Executing algorithm "Breadth first search" on graph "dota-league".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r583814_BFS-dota-league at hdfs.
+Report execution r583814 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r583814 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533736779868

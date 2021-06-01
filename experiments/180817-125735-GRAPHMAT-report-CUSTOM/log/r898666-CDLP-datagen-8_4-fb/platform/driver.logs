@@ -1,0 +1,679 @@
+Runner executing benchmark r898666.
+format = env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH %s %s
+binaryName = ./bin/standard/cd
+argsString = intermediate/datagen-8_4-fb.mtx 10 r898666 0 intermediate/output.txt0 
+running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/cd intermediate/datagen-8_4-fb.mtx 10 r898666 0 intermediate/output.txt0 
+--------------------------------------------------------------------------
+[[31304,1],7]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: graphalytics-graphmat-slave7
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Reading file intermediate/datagen-8_4-fb.mtx0
+Got nnz: 2205590
+Reading file intermediate/datagen-8_4-fb.mtx2
+Got nnz: 2106648
+Reading file intermediate/datagen-8_4-fb.mtx1
+Reading file intermediate/datagen-8_4-fb.mtx4
+Got nnz: 2141016
+Reading file intermediate/datagen-8_4-fb.mtx8
+Got nnz: 2106648
+Got nnz: 2141016
+Reading file intermediate/datagen-8_4-fb.mtx10
+Got nnz: 2206976
+Reading file intermediate/datagen-8_4-fb.mtx6
+Reading file intermediate/datagen-8_4-fb.mtx5
+Got nnz: 2226774
+Reading file intermediate/datagen-8_4-fb.mtx3
+Got nnz: 2100695
+Got nnz: 2144764
+Reading file intermediate/datagen-8_4-fb.mtx12
+Got nnz: 2100695
+Reading file intermediate/datagen-8_4-fb.mtx14
+Got nnz: 2142170
+Reading file intermediate/datagen-8_4-fb.mtx11
+Reading file intermediate/datagen-8_4-fb.mtx9
+Got nnz: 2144764
+Reading file intermediate/datagen-8_4-fb.mtx13
+Got nnz: 2126398
+Got nnz: 2142170
+Reading file intermediate/datagen-8_4-fb.mtx7
+Got nnz: 2126398
+Reading file intermediate/datagen-8_4-fb.mtx15
+Got nnz: 2227850
+Got nnz: 2100227
+Got nnz: 2112552
+Got nnz: 2093406
+Got nnz: 2111969
+Got nnz: 2099494
+Got nnz: 2088140
+Got nnz: 2104731
+Got nnz: 2092775
+Got nnz: 2142544
+Got nnz: 2092291
+Got nnz: 2077009
+Got nnz: 2087873
+Got nnz: 2094879
+Got nnz: 2100448
+Got nnz: 2104467
+Got nnz: 2078929
+Got nnz: 2092767
+Got nnz: 2090804
+Got nnz: 2092568
+Got nnz: 2086647
+Got nnz: 2086105
+Got nnz: 2084677
+Got nnz: 2089412
+Got nnz: 2075697
+Got nnz: 2086870
+Got nnz: 2080092
+Got nnz: 2080865
+Got nnz: 2077585
+Got nnz: 2091192
+Got nnz: 2083315
+Got nnz: 2084719
+Got nnz: 2071138
+Got nnz: 2117666
+Got nnz: 2085911
+Got nnz: 2094624
+Got nnz: 2095328
+Got nnz: 2092026
+Got nnz: 2097787
+Got nnz: 2134081
+Got nnz: 2069421
+Got nnz: 2076731
+Got nnz: 2078389
+Got nnz: 2091320
+Got nnz: 2089946
+Got nnz: 2111155
+Got nnz: 2112552
+Got nnz: 2075158
+Got nnz: 2115289
+Got nnz: 2078724
+Got nnz: 2100227
+Got nnz: 2104731
+Got nnz: 2111969
+Got nnz: 2092775
+Got nnz: 2087873
+Got nnz: 2093406
+Got nnz: 2142544
+Got nnz: 2088140
+Got nnz: 2118658
+Got nnz: 2118658
+Got nnz: 2104467
+Got nnz: 2094879
+Got nnz: 2100448
+Got nnz: 2092291
+Got nnz: 2078929
+Got nnz: 2077009
+Got nnz: 2099494
+Got nnz: 2232858
+Got nnz: 2157242
+Got nnz: 2210032
+Got nnz: 2113234
+Got nnz: 2157242
+Got nnz: 2083935
+Got nnz: 2102121
+Got nnz: 2122165
+Got nnz: 2102121
+Got nnz: 2232732
+Got nnz: 2144108
+Got nnz: 2130011
+Got nnz: 2144108
+Got nnz: 2105189
+Got nnz: 2206906
+Got nnz: 2099361
+Got nnz: 2130011
+Got nnz: 2113234
+Got nnz: 2075911
+Got nnz: 2086396
+Got nnz: 2113493
+Got nnz: 2088295
+Got nnz: 2108970
+Got nnz: 2078492
+Got nnz: 2144023
+Got nnz: 2090252
+Got nnz: 2087848
+Got nnz: 2101875
+Got nnz: 2109664
+Got nnz: 2076086
+Got nnz: 2080441
+Got nnz: 2090804
+Got nnz: 2076908
+Got nnz: 2092767
+Got nnz: 2089746
+Got nnz: 2079068
+Got nnz: 2074127
+Got nnz: 2075799
+Got nnz: 2098362
+Got nnz: 2077229
+Got nnz: 2082996
+Got nnz: 2092568
+Got nnz: 2089412
+Got nnz: 2096918
+Got nnz: 2072178
+Got nnz: 2122165
+Got nnz: 2087003
+Got nnz: 2083935
+Got nnz: 2084426
+Got nnz: 2083315
+Got nnz: 2062122
+Got nnz: 2086105
+Got nnz: 2065953
+Got nnz: 2086647
+Got nnz: 2086870
+Got nnz: 2081322
+Got nnz: 2105189
+Got nnz: 2084677
+Got nnz: 2108970
+Got nnz: 2112853
+Got nnz: 2112853
+Got nnz: 2080865
+Got nnz: 2075799
+Got nnz: 2084719
+Got nnz: 2091192
+Got nnz: 2086396
+Got nnz: 2080092
+Got nnz: 2071138
+Got nnz: 2144023
+Got nnz: 2099361
+Got nnz: 2077585
+Got nnz: 2226672
+Got nnz: 2075697
+Got nnz: 2081912
+Got nnz: 2145446
+Got nnz: 2078492
+Got nnz: 2111467
+Got nnz: 2108256
+Got nnz: 2101875
+Got nnz: 2211278
+Got nnz: 2089746
+Got nnz: 2080441
+Got nnz: 2109664
+Got nnz: 2076908
+Got nnz: 2099534
+Got nnz: 2145446
+Got nnz: 2085911
+Got nnz: 2093884
+Got nnz: 2117666
+Got nnz: 2076086
+Got nnz: 2113493
+Got nnz: 2085550
+Got nnz: 2102313
+Got nnz: 2099534
+Got nnz: 2217692
+Got nnz: 2084865
+Got nnz: 2133170
+Got nnz: 2088295
+Got nnz: 2140765
+Got nnz: 2140765
+Got nnz: 2074700
+Got nnz: 2203276
+Got nnz: 2094624
+Got nnz: 2075911
+Got nnz: 2111210
+Got nnz: 2115289
+Got nnz: 2097787
+Got nnz: 2108256
+Got nnz: 2133170
+Got nnz: 2130964
+Got nnz: 2092026
+Got nnz: 2111467
+Got nnz: 2097884
+Got nnz: 2075470
+Got nnz: 2076731
+Got nnz: 2090252
+Got nnz: 2081912
+Got nnz: 2094980
+Got nnz: 2091288
+Got nnz: 2095328
+Got nnz: 2081322
+Got nnz: 2072096
+Got nnz: 2098362
+Got nnz: 2134081
+Got nnz: 2086437
+Got nnz: 2085138
+Got nnz: 2104459
+Got nnz: 2074127
+Got nnz: 2091320
+Got nnz: 2104459
+Got nnz: 2078724
+Got nnz: 2082996
+Got nnz: 2093884
+Got nnz: 2086437
+Got nnz: 2111210
+Got nnz: 2087848
+Got nnz: 2111155
+Got nnz: 2078389
+Got nnz: 2075158
+Got nnz: 2126398
+Got nnz: 2077229
+Got nnz: 2069421
+Got nnz: 2089946
+Got nnz: 2084865
+Got nnz: 2126398
+Got nnz: 2096918
+Got nnz: 2241312
+Got nnz: 2065953
+Got nnz: 2130964
+Got nnz: 2105205
+Got nnz: 2085550
+Got nnz: 2145428
+Got nnz: 2087003
+Got nnz: 2084426
+Got nnz: 2100227
+Got nnz: 2062122
+Got nnz: 2112552
+Got nnz: 2074700
+Got nnz: 2205072
+Got nnz: 2079068
+Got nnz: 2072178
+Got nnz: 2097884
+Got nnz: 2106648
+Got nnz: 2227850
+Got nnz: 2145428
+Got nnz: 2142170
+Got nnz: 2083271
+Got nnz: 2085138
+Got nnz: 2092767
+Got nnz: 2094980
+Got nnz: 2091288
+Got nnz: 2090804
+Got nnz: 2072096
+Got nnz: 2226774
+Got nnz: 2083271
+Got nnz: 2102313
+Got nnz: 2075470
+Got nnz: 2225386
+Got nnz: 2099494
+Got nnz: 2117666
+Got nnz: 2142170
+Got nnz: 2093406
+Got nnz: 2100695
+Got nnz: 2104731
+Got nnz: 2120506
+Got nnz: 2085911
+Got nnz: 2142929
+Got nnz: 2092775
+Got nnz: 2187266
+Got nnz: 2142929
+Got nnz: 2100695
+Got nnz: 2105205
+Got nnz: 2112552
+Got nnz: 2111969
+Got nnz: 2086647
+Got nnz: 2075697
+Got nnz: 2088140
+Got nnz: 2120506
+Got nnz: 2206976
+Got nnz: 2092568
+Got nnz: 2100227
+Got nnz: 2141016
+Got nnz: 2086105
+Got nnz: 2144764
+Got nnz: 2142544
+Got nnz: 2205590
+Got nnz: 2144764
+Got nnz: 2089412
+Got nnz: 2118658
+Got nnz: 2084677
+Got nnz: 2095328
+Got nnz: 2106648
+Got nnz: 2118658
+Got nnz: 2069421
+Got nnz: 2094624
+Got nnz: 2094879
+Got nnz: 2092026
+Got nnz: 2141016
+Got nnz: 2077009
+Got nnz: 2086870
+Got nnz: 2104467
+Got nnz: 2078929
+Got nnz: 2122165
+Got nnz: 2134081
+Got nnz: 2111969
+Got nnz: 2083935
+Got nnz: 2097787
+Got nnz: 2092291
+Got nnz: 2087873
+Got nnz: 2104731
+Got nnz: 2087873
+Got nnz: 2092775
+Got nnz: 2080865
+Got nnz: 2100448
+Got nnz: 2077585
+Got nnz: 2076731
+Got nnz: 2091192
+Got nnz: 2088295
+Got nnz: 2142544
+Got nnz: 2157242
+Got nnz: 2075911
+Got nnz: 2071138
+Got nnz: 2093406
+Got nnz: 2113234
+Got nnz: 2232858
+Got nnz: 2210032
+Got nnz: 2080092
+Got nnz: 2083315
+Got nnz: 2091320
+Got nnz: 2088140
+Got nnz: 2092767
+Got nnz: 2089946
+Got nnz: 2084719
+Got nnz: 2102121
+Got nnz: 2111155
+Got nnz: 2099361
+Got nnz: 2113493
+Got nnz: 2090804
+Got nnz: 2157242
+Got nnz: 2086396
+Got nnz: 2075158
+Got nnz: 2105189
+Got nnz: 2078389
+Got nnz: 2115289
+Got nnz: 2102121
+Got nnz: 2083935
+Got nnz: 2094879
+Got nnz: 2078492
+Got nnz: 2100448
+Got nnz: 2087848
+Got nnz: 2078724
+Got nnz: 2092291
+Got nnz: 2108970
+Got nnz: 2074127
+Got nnz: 2079068
+Got nnz: 2090252
+Got nnz: 2122165
+Got nnz: 2078929
+Got nnz: 2112853
+Got nnz: 2144023
+Got nnz: 2104467
+Got nnz: 2099494
+Got nnz: 2232732
+Got nnz: 2077229
+Got nnz: 2089412
+Got nnz: 2130011
+Got nnz: 2098362
+Got nnz: 2086105
+Got nnz: 2144108
+Got nnz: 2083315
+Got nnz: 2077009
+Got nnz: 2092568
+Got nnz: 2111467
+Got nnz: 2112853
+Got nnz: 2206906
+Got nnz: 2082996
+Got nnz: 2086870
+Got nnz: 2108970
+Got nnz: 2144108
+Got nnz: 2101875
+Got nnz: 2113234
+Got nnz: 2086647
+Got nnz: 2086396
+Got nnz: 2075799
+Got nnz: 2076086
+Got nnz: 2080441
+Got nnz: 2105189
+Got nnz: 2117666
+Got nnz: 2130011
+Got nnz: 2084677
+Got nnz: 2076908
+Got nnz: 2081912
+Got nnz: 2144023
+Got nnz: 2145446
+Got nnz: 2109664
+Got nnz: 2099361
+Got nnz: 2211278
+Got nnz: 2096918
+Got nnz: 2108256
+Got nnz: 2075799
+Got nnz: 2075911
+Got nnz: 2226672
+Got nnz: 2072178
+Got nnz: 2084426
+Got nnz: 2078492
+Got nnz: 2062122
+Got nnz: 2089746
+Got nnz: 2085550
+Got nnz: 2085911
+Got nnz: 2099534
+Got nnz: 2145446
+Got nnz: 2084865
+Got nnz: 2087003
+Got nnz: 2081912
+Got nnz: 2080865
+Got nnz: 2102313
+Got nnz: 2081322
+Got nnz: 2093884
+Got nnz: 2099534
+Got nnz: 2080092
+Got nnz: 2084719
+Got nnz: 2071138
+Got nnz: 2097787
+Got nnz: 2065953
+Got nnz: 2074700
+Got nnz: 2088295
+Got nnz: 2111210
+Got nnz: 2104459
+Got nnz: 2092026
+Got nnz: 2091192
+Got nnz: 2101875
+Got nnz: 2115289
+Got nnz: 2094624
+Got nnz: 2130964
+Got nnz: 2075697
+Got nnz: 2089746
+Got nnz: 2109664
+Got nnz: 2098362
+Got nnz: 2076731
+Got nnz: 2076908
+Got nnz: 2077585
+Got nnz: 2111467
+Got nnz: 2095328
+Got nnz: 2074127
+Got nnz: 2217692
+Got nnz: 2080441
+Got nnz: 2090252
+Got nnz: 2081322
+Got nnz: 2134081
+Got nnz: 2133170
+Got nnz: 2111210
+Got nnz: 2113493
+Got nnz: 2082996
+Got nnz: 2140765
+Got nnz: 2087848
+Got nnz: 2084865
+Got nnz: 2104459
+Got nnz: 2076086
+Got nnz: 2203276
+Got nnz: 2140765
+Got nnz: 2097884
+Got nnz: 2093884
+Got nnz: 2086437
+Got nnz: 2145428
+Got nnz: 2077229
+Got nnz: 2075470
+Got nnz: 2130964
+Got nnz: 2085550
+Got nnz: 2205072
+Got nnz: 2108256
+Got nnz: 2091288
+Got nnz: 2133170
+Got nnz: 2072096
+Got nnz: 2091320
+Got nnz: 2094980
+Got nnz: 2241312
+Got nnz: 2105205
+Got nnz: 2074700
+Got nnz: 2145428
+Got nnz: 2083271
+Got nnz: 2078724
+Got nnz: 2086437
+Got nnz: 2078389
+Got nnz: 2085138
+Got nnz: 2075158
+Got nnz: 2096918
+Got nnz: 2111155
+Got nnz: 2083271
+Got nnz: 2065953
+Got nnz: 2069421
+Got nnz: 2087003
+Got nnz: 2062122
+Got nnz: 2089946
+Got nnz: 2097884
+Got nnz: 2084426
+Got nnz: 2085138
+Got nnz: 2094980
+Got nnz: 2079068
+Got nnz: 2072096
+Got nnz: 2225386
+Got nnz: 2072178
+Got nnz: 2091288
+Got nnz: 2120506
+Got nnz: 2187266
+Got nnz: 2142929
+Got nnz: 2102313
+Got nnz: 2075470
+Got nnz: 2142929
+Got nnz: 2105205
+Got nnz: 2120506
+Finished GraphMat read + construction, time: 4.22099
+Finished GraphMat read + construction, time: 4.22093
+Finished GraphMat read + construction, time: 4.22106
+Finished GraphMat read + construction, time: 4.22099
+Finished GraphMat read + construction, time: 4.22093
+Finished GraphMat read + construction, time: 4.22105
+Finished GraphMat read + construction, time: 4.22104
+Finished GraphMat read + construction, time: 4.22082
+Finished GraphMat read + construction, time: 4.221
+Finished GraphMat read + construction, time: 4.22117
+Finished GraphMat read + construction, time: 4.22085
+Finished GraphMat read + construction, time: 4.22112
+Finished GraphMat read + construction, time: 4.22104
+Finished GraphMat read + construction, time: 4.2209
+Finished GraphMat read + construction, time: 4.22089
+Finished GraphMat read + construction, time: 4.22115
+Processing starts at: 1534511460354
+
+[graphalytics-graphmat:03203] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[graphalytics-graphmat:03203] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Completed 10 iterations 
+Processing ends at: 1534511471120
+
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Timing results:
+ - load graph: 4.22141 sec
+ - initialize engine: 0.070015 sec
+ - run algorithm: 10.777 sec
+ - print output: 0.185323 sec
+ - deinitialize engine: 0.22347 sec
+Timing results:
+ - load graph: 4.22142 sec
+ - initialize engine: 0.0687559 sec
+ - run algorithm: 10.7783 sec
+ - print output: 0.194112 sec
+ - deinitialize engine: 0.227243 sec
+Timing results:
+ - load graph: 4.22159 sec
+ - initialize engine: 0.0722239 sec
+ - run algorithm: 10.775 sec
+ - print output: 0.182122 sec
+ - deinitialize engine: 0.250023 sec
+Timing results:
+ - load graph: 4.22159 sec
+ - initialize engine: 0.069875 sec
+ - run algorithm: 10.7772 sec
+ - print output: 0.19261 sec
+ - deinitialize engine: 0.240747 sec
+Timing results:
+ - load graph: 4.22181 sec
+ - initialize engine: 0.0701301 sec
+ - run algorithm: 10.7768 sec
+ - print output: 0.177684 sec
+ - deinitialize engine: 0.256989 sec
+Timing results:
+ - load graph: 4.22159 sec
+ - initialize engine: 0.0769761 sec
+ - run algorithm: 10.7702 sec
+ - print output: 0.183871 sec
+ - deinitialize engine: 0.251433 sec
+Timing results:
+ - load graph: 4.22129 sec
+ - initialize engine: 0.0736461 sec
+ - run algorithm: 10.7736 sec
+ - print output: 0.196522 sec
+ - deinitialize engine: 0.240046 sec
+Timing results:
+ - load graph: 4.22157 sec
+ - initialize engine: 0.071558 sec
+ - run algorithm: 10.7753 sec
+ - print output: 0.179472 sec
+ - deinitialize engine: 0.259681 sec
+Timing results:
+ - load graph: 4.2217 sec
+ - initialize engine: 0.074475 sec
+ - run algorithm: 10.7726 sec
+ - print output: 0.189872 sec
+ - deinitialize engine: 0.25092 sec
+Timing results:
+ - load graph: 4.22163 sec
+ - initialize engine: 0.0803201 sec
+ - run algorithm: 10.7665 sec
+ - print output: 0.181083 sec
+ - deinitialize engine: 0.268319 sec
+Timing results:
+ - load graph: 4.22144 sec
+ - initialize engine: 0.0730131 sec
+ - run algorithm: 10.774 sec
+ - print output: 0.19128 sec
+ - deinitialize engine: 0.258802 sec
+Timing results:
+ - load graph: 4.22155 sec
+ - initialize engine: 0.0682101 sec
+ - run algorithm: 10.779 sec
+ - print output: 0.195223 sec
+ - deinitialize engine: 0.260144 sec
+Timing results:
+ - load graph: 4.22158 sec
+ - initialize engine: 0.081852 sec
+ - run algorithm: 10.7649 sec
+ - print output: 0.187032 sec
+ - deinitialize engine: 0.2693 sec
+Timing results:
+ - load graph: 4.22167 sec
+ - initialize engine: 0.0823641 sec
+ - run algorithm: 10.7649 sec
+ - print output: 0.176199 sec
+ - deinitialize engine: 0.28897 sec
+Timing results:
+ - load graph: 4.22149 sec
+ - initialize engine: 0.0827301 sec
+ - run algorithm: 10.7642 sec
+ - print output: 0.188418 sec
+ - deinitialize engine: 0.284707 sec
+Timing results:
+ - load graph: 4.22174 sec
+ - initialize engine: 0.0806909 sec
+ - run algorithm: 10.7662 sec
+ - print output: 6.63718 sec
+ - deinitialize engine: 0.280543 sec
+Report execution r898666 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r898666 at akka.tcp://executor-service@localhost:8011/user/executor-service.

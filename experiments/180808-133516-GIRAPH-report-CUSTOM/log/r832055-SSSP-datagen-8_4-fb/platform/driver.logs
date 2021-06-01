@@ -1,0 +1,8 @@
+StartTime: 1533735795908
+Runner executing benchmark r832055.
+Executing algorithm "Single source shortest paths" on graph "datagen-8_4-fb.e_weight".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r832055_SSSP-datagen-8_4-fb.e_weight at hdfs.
+Report execution r832055 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r832055 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533735846326

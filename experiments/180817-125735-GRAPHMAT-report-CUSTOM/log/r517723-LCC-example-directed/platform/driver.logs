@@ -1,0 +1,743 @@
+Runner executing benchmark r517723.
+format = env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH %s %s
+binaryName = ./bin/standard/lcc
+argsString = intermediate/example-directed.mtx r517723 1 intermediate/output.txt0 
+running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/lcc intermediate/example-directed.mtx r517723 1 intermediate/output.txt0 
+--------------------------------------------------------------------------
+[[32533,1],8]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: graphalytics-graphmat-slave8
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+num. threads: 16
+Reading file intermediate/example-directed.mtx0
+Got nnz: 17
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx2
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 17
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx4
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx8
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx12
+num. threads: 16
+Reading file intermediate/example-directed.mtx10
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx5
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-directed.mtx1
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx6
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx14
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx7
+num. threads: 16
+Reading file intermediate/example-directed.mtx13
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx9
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx3
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx11
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+num. threads: 16
+Reading file intermediate/example-directed.mtx15
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Finished GraphMat read + construction, time: 0.02082
+Finished GraphMat read + construction, time: 0.020664
+Finished GraphMat read + construction, time: 0.020502
+Finished GraphMat read + construction, time: 0.020745
+Finished GraphMat read + construction, time: 0.020692
+Finished GraphMat read + construction, time: 0.020301
+Finished GraphMat read + construction, time: 0.020621
+Finished GraphMat read + construction, time: 0.020749
+Finished GraphMat read + construction, time: 0.020505
+Finished GraphMat read + construction, time: 0.02045
+Finished GraphMat read + construction, time: 0.020723
+Finished GraphMat read + construction, time: 0.020814
+Finished GraphMat read + construction, time: 0.020792
+Finished GraphMat read + construction, time: 0.020792
+Finished GraphMat read + construction, time: 0.020672
+Finished GraphMat read + construction, time: 0.020662
+Processing starts at: 1534510696142
+
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Completed 1 iterations 
+Timing results:Timing results:Timing results:
+
+Completed 1 iterations 
+Timing results:
+ - Timing results:
+ - load graph: 0.021394 sec
+ - initialize engine: 6.19888e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.0377719 sec
+ -  - 
+ - load graphCompleted 1 iterations 
+load graphrun algorithm 2 (count triangles): 0.0443461 sec
+ - print output: 0.000118971 sec
+ - deinitialize engine: 5.50747e-05 sec
+: Completed 1 iterations 
+ - 0.021219Timing results:
+ - load graph: 0.021203 sec
+ - initialize engine: 6.38962e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.0377891 sec
+ - run algorithm 2 (count triangles): 0.0443408 sec
+ - print output: 2.00272e-05 sec
+ - deinitialize engine: 7.51019e-05 sec
+ secTiming results:: load graph0.0212338: 
+0.0213161 - Timing results:
+ - load graph: Processing ends at: 1534510696223
+
+initialize engine: 5.50747e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.03795 sec
+ - run algorithm 2 (count triangles): 0.044317 sec
+ - print output: 9.39369e-05 sec sec sec
+
+Completed 1 iterations 
+ - Timing results:
+ - Timing results:
+ - load graph: 0.0212121 sec
+ - initialize engine: 6.19888e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.0378599 sec
+ - run algorithm 2 (count triangles): 0.0443881 sec
+ - print output: 1.3113e-05 sec
+ - deinitialize engine: 4.88758e-05 sec
+load graphinitialize enginedeinitialize engineCompleted 1 iterations 
+ - : : 5.00679e-05
+0.021328 sec
+ - initialize engine: 4.1008e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.0378108 sec
+ - run algorithm 2 (count triangles): 0.0443301 sec
+ - print output: 0.000144005 sec
+ - deinitialize engine: 3.50475e-05 sec
+4.69685e-05initialize engine sec sec
+: 
+
+Completed 1 iterations 
+:  -  - 0.0211489 - 4.60148e-05Timing results:load graph secload graph secrun algorithm 1 - phase 1 & 2 (collect neighbors)
+
+: 
+0.0378571:  -  sec:  -  - 
+ - 0.020931run algorithm 2 (count triangles)0.0210092initialize engine: run algorithm 1 - phase 1 & 2 (collect neighbors)0.044307:  secTiming results:: 
+4.69685e-05 -  secTiming results:
+ - load graph: 0.0213671 sec
+ - initialize engine: 0.00265598 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.035563 sec0.0379701print output sec
+ - run algorithm 2 (count triangles): 0.0447628 sec
+ - print output: 0.00148511 sec
+ - deinitialize engine: 7.79629e-05 sec
+ sec: Timing results:
+ sec3.50475e-05
+ sec
+
+load graph
+ -  -  -  - deinitialize engine - run algorithm 2 (count triangles): 
+run algorithm 1 - phase 1 & 2 (collect neighbors)3.60012e-05initialize engine:  secinitialize engine: 
+: 0.0379341: 0.0443139
+ sec6.41346e-05 sec: 
+4.79221e-05
+0.0210381 -  sec -  secrun algorithm 2 (count triangles) - print output
+:  sec:  - 0.0442851
+5.00679e-05load graph secrun algorithm 1 - phase 1 & 2 (collect neighbors) sec
+: 
+
+ - run algorithm 1 - phase 1 & 2 (collect neighbors) -  - : print output0.0379069deinitialize engine0.0209589:  sec: : 0.03793292.28882e-053.31402e-05 -  sec
+initialize engine sec
+ - 
+ sec - 
+: deinitialize engine: 3.31402e-05 sec
+Timing results:run algorithm 2 (count triangles)
+ -  -  secload graph: run algorithm 2 (count triangles): 0.02129415.10216e-05 sec0.044327
+:  -  - load graph: 0.0211389 sec
+ - initialize engine: 4.69685e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors):  secinitialize engine: 0.04431414.79221e-05 sec
+ sec
+ sec - 
+run algorithm 1 - phase 1 & 2 (collect neighbors) - : 
+
+print output - 0.037926 sec: 
+ -  - print output0.037904 sec
+ - run algorithm 2 (count triangles): 0.0443821 sec
+ - print output: 1.40667e-05 sec
+ - deinitialize engine: 5.88894e-05 sec
+run algorithm 2 (count triangles): 2.31266e-050.0443811:  secrun algorithm 1 - phase 1 & 2 (collect neighbors)
+ sec - 1.40667e-05print output
+:  sec - 0.00199485 sec
+
+ -  - deinitialize enginedeinitialize engine - : : 5.00679e-05:  secdeinitialize engine
+initialize engine5.07832e-050.037878 sec: 3.79086e-05: 
+ sec sec
+4.91142e-05
+ sec - 
+run algorithm 2 (count triangles) - : run algorithm 1 - phase 1 & 2 (collect neighbors)0.0442939:  sec0.0379069
+ sec - 
+print output:  - run algorithm 2 (count triangles): 1.50204e-050.044307 sec sec
+
+ -  - print outputdeinitialize engine: : 1.50204e-054.79221e-05 sec sec
+
+ - deinitialize engine: 4.50611e-05 sec
+Timing results:
+ - load graph: 0.0210121 sec
+ - initialize engine: 5.38826e-05 sec
+ - run algorithm 1 - phase 1 & 2 (collect neighbors): 0.037847 sec
+ - run algorithm 2 (count triangles): 0.046303 sec
+ - print output: 2.31266e-05 sec
+ - deinitialize engine: 5.88894e-05 sec
+[graphalytics-graphmat:02526] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[graphalytics-graphmat:02526] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Report execution r517723 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r517723 at akka.tcp://executor-service@localhost:8011/user/executor-service.

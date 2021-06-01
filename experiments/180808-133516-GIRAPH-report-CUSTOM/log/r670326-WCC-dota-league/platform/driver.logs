@@ -1,0 +1,8 @@
+StartTime: 1533736666870
+Runner executing benchmark r670326.
+Executing algorithm "Connected components" on graph "dota-league".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r670326_WCC-dota-league at hdfs.
+Report execution r670326 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r670326 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533736707677

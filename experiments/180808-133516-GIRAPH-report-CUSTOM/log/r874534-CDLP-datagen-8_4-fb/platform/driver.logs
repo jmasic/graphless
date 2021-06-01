@@ -1,0 +1,8 @@
+StartTime: 1533736530766
+Runner executing benchmark r874534.
+Executing algorithm "Community detection - label propagation" on graph "datagen-8_4-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r874534_CDLP-datagen-8_4-fb at hdfs.
+Report execution r874534 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r874534 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533736604301

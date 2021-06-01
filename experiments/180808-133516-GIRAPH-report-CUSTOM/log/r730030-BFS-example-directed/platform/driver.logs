@@ -1,0 +1,8 @@
+StartTime: 1533735640176
+Runner executing benchmark r730030.
+Executing algorithm "Breadth first search" on graph "example-directed".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r730030_BFS-example-directed at hdfs.
+Report execution r730030 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r730030 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533735669234

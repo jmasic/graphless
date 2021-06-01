@@ -1,0 +1,8 @@
+StartTime: 1533741643932
+Runner executing benchmark r804069.
+Executing algorithm "Connected components" on graph "example-undirected".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r804069_WCC-example-undirected at hdfs.
+Report execution r804069 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r804069 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741672972

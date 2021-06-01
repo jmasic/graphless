@@ -1,0 +1,8 @@
+StartTime: 1533738736856
+Runner executing benchmark r717267.
+Executing algorithm "PageRank" on graph "datagen-8_9-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r717267_PR-datagen-8_9-fb at hdfs.
+Report execution r717267 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r717267 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533738921861

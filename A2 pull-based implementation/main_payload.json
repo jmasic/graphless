@@ -1,0 +1,1 @@
+{"graphName":"dota-league.e_weight","maxWorkers":1000,"extraArgs":{"sourceVertex":287770},"chunkSize":62,"testRun":false,"algorithm":"SSSP"}

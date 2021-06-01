@@ -1,0 +1,8 @@
+StartTime: 1533741768008
+Runner executing benchmark r895810.
+Executing algorithm "PageRank" on graph "example-undirected".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r895810_PR-example-undirected at hdfs.
+Report execution r895810 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r895810 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741796953

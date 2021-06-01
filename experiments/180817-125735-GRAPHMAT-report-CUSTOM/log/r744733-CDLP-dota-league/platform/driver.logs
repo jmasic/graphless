@@ -1,0 +1,679 @@
+Runner executing benchmark r744733.
+format = env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH %s %s
+binaryName = ./bin/standard/cd
+argsString = intermediate/dota-league.mtx 10 r744733 0 intermediate/output.txt0 
+running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/cd intermediate/dota-league.mtx 10 r744733 0 intermediate/output.txt0 
+--------------------------------------------------------------------------
+[[31105,1],7]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: graphalytics-graphmat-slave7
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Reading file intermediate/dota-league.mtx0
+Got nnz: 454634
+Reading file intermediate/dota-league.mtx1
+Reading file intermediate/dota-league.mtx4
+Got nnz: 433273
+Reading file intermediate/dota-league.mtx2
+Reading file intermediate/dota-league.mtx8
+Got nnz: 433273
+Got nnz: 428242
+Got nnz: 428242
+Reading file intermediate/dota-league.mtx10
+Reading file intermediate/dota-league.mtx12
+Got nnz: 445144
+Reading file intermediate/dota-league.mtx5
+Got nnz: 414096
+Got nnz: 406798
+Reading file intermediate/dota-league.mtx6
+Got nnz: 409979
+Reading file intermediate/dota-league.mtx13
+Reading file intermediate/dota-league.mtx3
+Got nnz: 445144
+Got nnz: 425563
+Reading file intermediate/dota-league.mtx7
+Got nnz: 425563
+Reading file intermediate/dota-league.mtx14
+Got nnz: 423433
+Reading file intermediate/dota-league.mtx9
+Reading file intermediate/dota-league.mtx11
+Got nnz: 409979
+Got nnz: 423433
+Reading file intermediate/dota-league.mtx15
+Got nnz: 441120
+Got nnz: 438962
+Got nnz: 419940
+Got nnz: 424749
+Got nnz: 447964
+Got nnz: 420887
+Got nnz: 421876
+Got nnz: 455383
+Got nnz: 431000
+Got nnz: 446239
+Got nnz: 435756
+Got nnz: 442658
+Got nnz: 433115
+Got nnz: 425264
+Got nnz: 442039
+Got nnz: 427195
+Got nnz: 447243
+Got nnz: 437525
+Got nnz: 403893
+Got nnz: 421652
+Got nnz: 427874
+Got nnz: 407127
+Got nnz: 418289
+Got nnz: 420332
+Got nnz: 410682
+Got nnz: 427890
+Got nnz: 435212
+Got nnz: 416248
+Got nnz: 443458
+Got nnz: 432540
+Got nnz: 419047
+Got nnz: 413974
+Got nnz: 441301
+Got nnz: 421318
+Got nnz: 148232
+Got nnz: 409197
+Got nnz: 421836
+Got nnz: 143635
+Got nnz: 447964
+Got nnz: 152479
+Got nnz: 405230
+Got nnz: 163364
+Got nnz: 406932
+Got nnz: 411051
+Got nnz: 431371
+Got nnz: 426857
+Got nnz: 407316
+Got nnz: 414892
+Got nnz: 428621
+Got nnz: 438962
+Got nnz: 420887
+Got nnz: 435608
+Got nnz: 435756
+Got nnz: 442039
+Got nnz: 424749
+Got nnz: 448934
+Got nnz: 419940
+Got nnz: 433115
+Got nnz: 431000
+Got nnz: 455383
+Got nnz: 425264
+Got nnz: 437398
+Got nnz: 442658
+Got nnz: 421876
+Got nnz: 446239
+Got nnz: 427195
+Got nnz: 437398
+Got nnz: 438694
+Got nnz: 440092
+Got nnz: 447243
+Got nnz: 442590
+Got nnz: 430651
+Got nnz: 448934
+Got nnz: 436448
+Got nnz: 450793
+Got nnz: 450932
+Got nnz: 460504
+Got nnz: 450932
+Got nnz: 440092
+Got nnz: 450793
+Got nnz: 441992
+Got nnz: 441992
+Got nnz: 421856
+Got nnz: 419672
+Got nnz: 423016
+Got nnz: 437893
+Got nnz: 167191
+Got nnz: 445928
+Got nnz: 419324
+Got nnz: 427358
+Got nnz: 427874
+Got nnz: 448510
+Got nnz: 447330
+Got nnz: 429911
+Got nnz: 437816
+Got nnz: 434764
+Got nnz: 168812
+Got nnz: 438802
+Got nnz: 160464
+Got nnz: 429279
+Got nnz: 423946
+Got nnz: 168701
+Got nnz: 436634
+Got nnz: 407127
+Got nnz: 437128
+Got nnz: 421973
+Got nnz: 420332
+Got nnz: 437525
+Got nnz: 427358
+Got nnz: 432540
+Got nnz: 438405
+Got nnz: 431025
+Got nnz: 425297
+Got nnz: 427655
+Got nnz: 432293
+Got nnz: 421652
+Got nnz: 421856
+Got nnz: 423829
+Got nnz: 423460
+Got nnz: 428706
+Got nnz: 419672
+Got nnz: 403893
+Got nnz: 414476
+Got nnz: 436448
+Got nnz: 430345
+Got nnz: 434764
+Got nnz: 435212
+Got nnz: 422186
+Got nnz: 416248
+Got nnz: 413974
+Got nnz: 437893
+Got nnz: 427890
+Got nnz: 410682
+Got nnz: 419047
+Got nnz: 418289
+Got nnz: 407422
+Got nnz: 173842
+Got nnz: 430651
+Got nnz: 443458
+Got nnz: 422186
+Got nnz: 441301
+Got nnz: 418257
+Got nnz: 408996
+Got nnz: 421836
+Got nnz: 439068
+Got nnz: 429911
+Got nnz: 447330
+Got nnz: 429279
+Got nnz: 423016
+Got nnz: 437816
+Got nnz: 436634
+Got nnz: 165561
+Got nnz: 448510
+Got nnz: 414476
+Got nnz: 143635
+Got nnz: 438802
+Got nnz: 166461
+Got nnz: 173365
+Got nnz: 152479
+Got nnz: 421973
+Got nnz: 437128
+Got nnz: 421988
+Got nnz: 160464
+Got nnz: 426075
+Got nnz: 426075
+Got nnz: 429937
+Got nnz: 168812
+Got nnz: 418257
+Got nnz: 421318
+Got nnz: 166461
+Got nnz: 422098
+Got nnz: 426857
+Got nnz: 409734
+Got nnz: 436463
+Got nnz: 165561
+Got nnz: 166653
+Got nnz: 429937
+Got nnz: 409734
+Got nnz: 409197
+Got nnz: 436463
+Got nnz: 425563
+Got nnz: 488704
+Got nnz: 432942
+Got nnz: 421548
+Got nnz: 421541
+Got nnz: 413928
+Got nnz: 415916
+Got nnz: 419324
+Got nnz: 427655
+Got nnz: 416085
+Got nnz: 148232
+Got nnz: 419867
+Got nnz: 216950
+Got nnz: 438962
+Got nnz: 167191
+Got nnz: 423721
+Got nnz: 423946
+Got nnz: 441120
+Got nnz: 428210
+Got nnz: 431371
+Got nnz: 173842
+Got nnz: 424480
+Got nnz: 423433
+Got nnz: 411051
+Got nnz: 407316
+Got nnz: 163364
+Got nnz: 415916
+Got nnz: 408996
+Got nnz: 406932
+Got nnz: 216950
+Got nnz: 437525
+Got nnz: 414892
+Got nnz: 168701
+Got nnz: 421988
+Got nnz: 405230
+Got nnz: 423433
+Got nnz: 435756
+Got nnz: 425297
+Got nnz: 173365
+Got nnz: 419940
+Got nnz: 428621
+Got nnz: 438405
+Got nnz: 435608
+Got nnz: 423460
+Got nnz: 177814
+Got nnz: 166653
+Got nnz: 421318
+Got nnz: 177814
+Got nnz: 432293
+Got nnz: 410490
+Got nnz: 428706
+Got nnz: 445144
+Got nnz: 445144
+Got nnz: 425563
+Got nnz: 447964
+Got nnz: 431025
+Got nnz: 403893
+Got nnz: 421541
+Got nnz: 420332
+Got nnz: 420887
+Got nnz: 423721
+Got nnz: 421548
+Got nnz: 423829
+Got nnz: 430345
+Got nnz: 414096
+Got nnz: 416085
+Got nnz: 428210
+Got nnz: 148232
+Got nnz: 442658
+Got nnz: 420887
+Got nnz: 427874
+Got nnz: 442039
+Got nnz: 419075
+Got nnz: 437398
+Got nnz: 152479
+Got nnz: 413928
+Got nnz: 447964
+Got nnz: 419075
+Got nnz: 412415
+Got nnz: 424749
+Got nnz: 424480
+Got nnz: 419867
+Got nnz: 435756
+Got nnz: 425854
+Got nnz: 417466
+Got nnz: 436448
+Got nnz: 421836
+Got nnz: 427890
+Got nnz: 407127
+Got nnz: 428242
+Got nnz: 432540
+Got nnz: 448934
+Got nnz: 412415
+Got nnz: 421652
+Got nnz: 409979
+Got nnz: 428242
+Got nnz: 424620
+Got nnz: 438694
+Got nnz: 417466
+Got nnz: 406798
+Got nnz: 419324
+Got nnz: 163364
+Got nnz: 433273
+Got nnz: 419940
+Got nnz: 425264
+Got nnz: 143635
+Got nnz: 430651
+Got nnz: 426857
+Got nnz: 442039
+Got nnz: 409197
+Got nnz: 409979
+Got nnz: 455383
+Got nnz: 421876
+Got nnz: 438962
+Got nnz: 407127
+Got nnz: 419672
+Got nnz: 454634
+Got nnz: 433273
+Got nnz: 431000
+Got nnz: 167191
+Got nnz: 448934
+Got nnz: 416248
+Got nnz: 446239
+Got nnz: 440092
+Got nnz: 442658
+Got nnz: 424749
+Got nnz: 421856
+Got nnz: 427874
+Got nnz: 418289
+Got nnz: 433115
+Got nnz: 435212
+Got nnz: 437398
+Got nnz: 168812
+Got nnz: 447243
+Got nnz: 427195
+Got nnz: 410682
+Got nnz: 411051
+Got nnz: 427358
+Got nnz: 423016
+Got nnz: 420332
+Got nnz: 443458
+Got nnz: 422186
+Got nnz: 442590
+Got nnz: 440092
+Got nnz: 427358
+Got nnz: 431371
+Got nnz: 405230
+Got nnz: 413974
+Got nnz: 421856
+Got nnz: 441301
+Got nnz: 406932
+Got nnz: 168701
+Got nnz: 419047
+Got nnz: 455383
+Got nnz: 421973
+Got nnz: 408996
+Got nnz: 419672
+Got nnz: 414476
+Got nnz: 437893
+Got nnz: 428621
+Got nnz: 432540
+Got nnz: 434764
+Got nnz: 425264
+Got nnz: 433115
+Got nnz: 160464
+Got nnz: 407316
+Got nnz: 435608
+Got nnz: 143635
+Got nnz: 431000
+Got nnz: 403893
+Got nnz: 407422
+Got nnz: 160464
+Got nnz: 450932
+Got nnz: 414892
+Got nnz: 173842
+Got nnz: 437525
+Got nnz: 423946
+Got nnz: 434764
+Got nnz: 427195
+Got nnz: 166461
+Got nnz: 427655
+Got nnz: 450932
+Got nnz: 421836
+Got nnz: 450793
+Got nnz: 166653
+Got nnz: 447243
+Got nnz: 421876
+Got nnz: 460504
+Got nnz: 430651
+Got nnz: 165561
+Got nnz: 421652
+Got nnz: 418257
+Got nnz: 447330
+Got nnz: 436448
+Got nnz: 446239
+Got nnz: 421973
+Got nnz: 441992
+Got nnz: 427890
+Got nnz: 152479
+Got nnz: 429911
+Got nnz: 448510
+Got nnz: 445928
+Got nnz: 168812
+Got nnz: 437816
+Got nnz: 414476
+Got nnz: 450793
+Got nnz: 437893
+Got nnz: 173365
+Got nnz: 438405
+Got nnz: 422186
+Got nnz: 165561
+Got nnz: 409734
+Got nnz: 441992
+Got nnz: 426857
+Got nnz: 488704
+Got nnz: 423016
+Got nnz: 438802
+Got nnz: 425297
+Got nnz: 437128
+Got nnz: 431025
+Got nnz: 409734
+Got nnz: 439068
+Got nnz: 432293
+Got nnz: 429279
+Got nnz: 166461
+Got nnz: 216950
+Got nnz: 435212
+Got nnz: 427655
+Got nnz: 436634
+Got nnz: 418257
+Got nnz: 423829
+Got nnz: 421318
+Got nnz: 421988
+Got nnz: 148232
+Got nnz: 416248
+Got nnz: 430345
+Got nnz: 413974
+Got nnz: 410682
+Got nnz: 167191
+Got nnz: 415916
+Got nnz: 423460
+Got nnz: 429911
+Got nnz: 173842
+Got nnz: 409197
+Got nnz: 415916
+Got nnz: 447330
+Got nnz: 428706
+Got nnz: 419324
+Got nnz: 441301
+Got nnz: 419047
+Got nnz: 216950
+Got nnz: 429279
+Got nnz: 437816
+Got nnz: 177814
+Got nnz: 418289
+Got nnz: 426075
+Got nnz: 423946
+Got nnz: 426075
+Got nnz: 163364
+Got nnz: 408996
+Got nnz: 437128
+Got nnz: 436634
+Got nnz: 443458
+Got nnz: 429937
+Got nnz: 422098
+Got nnz: 168701
+Got nnz: 421548
+Got nnz: 448510
+Got nnz: 173365
+Got nnz: 421988
+Got nnz: 421541
+Got nnz: 166653
+Got nnz: 177814
+Got nnz: 432942
+Got nnz: 436463
+Got nnz: 438802
+Got nnz: 413928
+Got nnz: 416085
+Got nnz: 431371
+Got nnz: 410490
+Got nnz: 429937
+Got nnz: 411051
+Got nnz: 424480
+Got nnz: 419867
+Got nnz: 407316
+Got nnz: 436463
+Got nnz: 406932
+Got nnz: 425297
+Got nnz: 438405
+Got nnz: 423721
+Got nnz: 423460
+Got nnz: 414892
+Got nnz: 435608
+Got nnz: 432293
+Got nnz: 428210
+Got nnz: 421541
+Got nnz: 421548
+Got nnz: 405230
+Got nnz: 423721
+Got nnz: 428706
+Got nnz: 430345
+Got nnz: 416085
+Got nnz: 419075
+Got nnz: 428621
+Got nnz: 419075
+Got nnz: 412415
+Got nnz: 431025
+Got nnz: 428210
+Got nnz: 424480
+Got nnz: 425854
+Got nnz: 423829
+Got nnz: 413928
+Got nnz: 417466
+Got nnz: 424620
+Got nnz: 419867
+Got nnz: 412415
+Got nnz: 417466
+Finished GraphMat read + construction, time: 0.669848
+Finished GraphMat read + construction, time: 0.669827
+Finished GraphMat read + construction, time: 0.669869
+Finished GraphMat read + construction, time: 0.669921
+Finished GraphMat read + construction, time: 0.669931
+Finished GraphMat read + construction, time: 0.669762
+Finished GraphMat read + construction, time: 0.669807
+Finished GraphMat read + construction, time: 0.669782
+Finished GraphMat read + construction, time: 0.669938
+Finished GraphMat read + construction, time: 0.669706
+Finished GraphMat read + construction, time: 0.669759
+Finished GraphMat read + construction, time: 0.669642
+Finished GraphMat read + construction, time: 0.669725
+Finished GraphMat read + construction, time: 0.669822
+Finished GraphMat read + construction, time: 0.66979
+Finished GraphMat read + construction, time: 0.669709
+Processing starts at: 1534512325819
+
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Processing ends at: 1534512328312
+
+Completed 10 iterations 
+Timing results:
+ - load graph: Timing results:0.670283
+ - load graph: 0.670376 sec
+ - initialize engine: 0.00157309 sec
+ - run algorithm: 2.49178 sec
+ - print output: 0.00302482 sec
+ - deinitialize engine: 0.00622916 sec
+ sec
+ - initialize engine: Timing results:0.00160313
+ sec - 
+load graph - Timing results:run algorithm: 
+ - : load graph2.49178: 0.67036 sec0.670399 sec sec
+Timing results:
+ - 
+initialize engine - : 
+ - load graph: 0.670387 sec
+ - initialize engine: 0.00140691 sec
+ - run algorithm: 2.49233 sec
+ - print output: 0.00420499 sec
+ - deinitialize engine: 0.00529289 sec
+print output0.00156713 -  secTiming results:
+
+: initialize engine -  - run algorithmload graph0.00441909: : : 2.49213 sec0.670379
+ secTiming results: - 
+ secprint output - 0.0016129initialize engine
+: :  sec0.00302291Timing results:0.00149393
+ sec sec
+
+
+ -  -  - Timing results:
+ - load graph: load graphrun algorithmrun algorithm: :  - 
+ - deinitialize engine: 0.00681996 sec
+2.49249: 0.670305 sec -  sec
+2.4922
+ - deinitialize engine - print output secinitialize engine: 0.670334 sec
+ - initialize engine: 0.00137186 sec
+ - run algorithm: 2.49201 sec
+ - print output: 0.00405002 sec
+ - deinitialize engine: 0.00588703 sec
+: 0.00324416: 0.001724 sec
+ sec
+ - 
+ - deinitialize engine - 0.00448203run algorithm: : 0.00706387print outputload graph2.49197 sec sec
+ secTiming results:: 
+0.00370908
+:  -  sec
+ - print output
+load graph0.670187:  - :  sec
+0.004466060.670269deinitialize engine sec:  sec - 
+initialize engine0.00541091
+ - Timing results:
+ - load graph: 0.670447 sec
+ - initialize engine: 0.00143909 sec
+ - run algorithm: 2.49243 sec
+ - print output: 0.00321102 sec
+ - deinitialize engine: 0.00754499 -  secdeinitialize engine: initialize engine sec
+: 
+: 0.001361850.00628781 sec0.00146484
+ sec - 
+run algorithm sec: 
+2.49233 sec - run algorithm
+:  - print output2.49224 sec: 
+0.00443983 sec - print output
+ - : 0.00426507deinitialize engine sec: 
+0.00506711 sec - deinitialize engine
+: Timing results:0.007164
+ sec - 
+load graph: 0.670212 sec
+ - initialize engine: 0.00165582 sec
+ - run algorithm: 2.49217 sec
+ - print output: 0.00437617 sec
+ - deinitialize engine: 0.00759602 sec
+Timing results:
+ - load graph: 0.67024 sec
+ - initialize engine: 0.00164294 sec
+ - run algorithm: 2.49241 sec
+ - print output: 0.0105081 sec
+ - deinitialize engine: 0.00648499 sec
+Timing results:
+ - load graph: 0.670399 sec
+ - initialize engine: 0.00156093 sec
+ - run algorithm: 2.49248 sec
+ - print output: 0.010699 sec
+ - deinitialize engine: 0.00650096 sec
+Timing results:
+ - load graph: 0.670166 sec
+ - initialize engine: 0.00149608 sec
+ - run algorithm: 2.49982 sec
+ - print output: 0.00431204 sec
+ - deinitialize engine: 0.00701499 sec
+Timing results:
+ - load graph: 0.670482 sec
+ - initialize engine: 0.00162315 sec
+ - run algorithm: 2.49279 sec
+ - print output: 0.108772 sec
+ - deinitialize engine: 0.00515318 sec
+[graphalytics-graphmat:03914] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[graphalytics-graphmat:03914] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Report execution r744733 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r744733 at akka.tcp://executor-service@localhost:8011/user/executor-service.

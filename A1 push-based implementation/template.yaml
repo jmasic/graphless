@@ -1,0 +1,126 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  thesis-go
+  
+  Test execution for Go2
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 300
+    MemorySize: 1024
+    Environment:
+      Variables:
+        EnableTracing: !Ref EnableTracingParameter
+        thundra_apiKey: ae0b056c-8574-47a1-a1a9-6379afd01141
+
+Parameters: 
+  EnableTracingParameter: 
+    Type: String
+    Default: false
+    AllowedValues: 
+      - true
+      - false
+    Description: Enter true to enable tracing. Default is false
+
+Mappings:
+  Constants:
+    FunctionNames:
+      MainFunction: MainFunction
+      OrchestratorFunction: OrchestratorFunction
+      WorkerFunction: WorkerFunction
+
+
+Resources:
+  MainFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: !FindInMap [Constants, FunctionNames, MainFunction]
+      CodeUri: bin/main_function
+      Handler: main_function
+      MemorySize: 3008
+      Runtime: go1.x
+      Role: !GetAtt MainFunctionRole.Arn
+      #Tracing: Active # https://docs.aws.amazon.com/lambda/latest/dg/lambda-x-ray.html
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+        Variables:
+          MESSAGE: Test message
+          ORCHESTRATOR_FUNCTION_NAME: !FindInMap [Constants, FunctionNames, OrchestratorFunction]
+      # VpcConfig:
+      #   SecurityGroupIds:
+      #     - sg-42abad28
+      #   SubnetIds:
+      #     - subnet-a966fcc2
+      #     - subnet-2ce63b51
+     
+  OrchestratorFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      FunctionName: !FindInMap [Constants, FunctionNames, OrchestratorFunction]
+      CodeUri: bin/orchestrator_function
+      Handler: orchestrator_function
+      MemorySize: 3008
+      Runtime: go1.x
+      Role: !GetAtt MainFunctionRole.Arn
+      Environment: 
+        Variables:
+          MESSAGE: Test message
+          WORKER_FUNCTION_NAME: !FindInMap [Constants, FunctionNames, WorkerFunction]
+      # VpcConfig:
+      #   SecurityGroupIds:
+      #     - sg-42abad28
+      #   SubnetIds:
+      #     - subnet-a966fcc2
+      #     - subnet-2ce63b51
+  WorkerFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      FunctionName: !FindInMap [Constants, FunctionNames, WorkerFunction]
+      CodeUri: bin/worker_function
+      MemorySize: 1600
+      Handler: worker_function
+      Runtime: go1.x
+      Role: !GetAtt MainFunctionRole.Arn
+      Environment: 
+        Variables:
+          MESSAGE: Test message
+          ORCHESTRATOR_FUNCTION_NAME: !FindInMap [Constants, FunctionNames, OrchestratorFunction]
+      # VpcConfig:
+      #   SecurityGroupIds:
+      #     - sg-42abad28
+      #   SubnetIds:
+      #     - subnet-a966fcc2
+      #     - subnet-2ce63b51
+  MainFunctionRole: 
+    Type: AWS::IAM::Role
+    Properties:
+      Path: /MainFunctionRole/
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement: 
+          - 
+            Effect: Allow
+            Principal: 
+              Service: 
+                - lambda.amazonaws.com
+            Action: 
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: "invokeLambda"
+          PolicyDocument: 
+            Statement:
+              - Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource:
+                  - "*"
+
+      ManagedPolicyArns: 
+        - arn:aws:iam::aws:policy/AWSLambdaExecute
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+# Outputs:
+
+#   MainFunction:
+#     Description: "First Lambda Function ARN"
+#     Value: !GetAtt MainFunction.Arn

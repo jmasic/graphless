@@ -1,0 +1,8 @@
+StartTime: 1533740824113
+Runner executing benchmark r783247.
+Executing algorithm "PageRank" on graph "com-friendster".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r783247_PR-com-friendster at hdfs.
+Report execution r783247 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r783247 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741243296

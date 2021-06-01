@@ -1,0 +1,679 @@
+Runner executing benchmark r772774.
+format = env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH %s %s
+binaryName = ./bin/standard/cd
+argsString = intermediate/example-undirected.mtx 2 r772774 0 intermediate/output.txt0 
+running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/cd intermediate/example-undirected.mtx 2 r772774 0 intermediate/output.txt0 
+--------------------------------------------------------------------------
+[[24647,1],7]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: graphalytics-graphmat-slave7
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Reading file intermediate/example-undirected.mtx0
+Got nnz: 24
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 24
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx4
+Reading file intermediate/example-undirected.mtx1
+Reading file intermediate/example-undirected.mtx2
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx8
+Reading file intermediate/example-undirected.mtx12
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx5
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx10
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx9
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx6
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx3
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx14
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx7
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx13
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx11
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Reading file intermediate/example-undirected.mtx15
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Got nnz: 0
+Finished GraphMat read + construction, time: 0.034521
+Finished GraphMat read + construction, time: 0.034378
+Finished GraphMat read + construction, time: 0.034465
+Finished GraphMat read + construction, time: 0.034422
+Finished GraphMat read + construction, time: 0.034434
+Finished GraphMat read + construction, time: 0.03439
+Finished GraphMat read + construction, time: 0.034248
+Finished GraphMat read + construction, time: 0.03454
+Finished GraphMat read + construction, time: 0.034492
+Finished GraphMat read + construction, time: 0.034332
+Finished GraphMat read + construction, time: 0.034428
+Finished GraphMat read + construction, time: 0.034596
+Finished GraphMat read + construction, time: 0.034585
+Processing starts at: 1534517085784
+
+Finished GraphMat read + construction, time: 0.034595
+Finished GraphMat read + construction, time: 0.034512
+Finished GraphMat read + construction, time: 0.034568
+Completed 2 iterations 
+Processing ends at: 1534517085828
+
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Completed 2 iterations 
+Timing results:Timing results:Timing results:
+ - load graph: 0.035331 sec
+ - initialize engine: 0.00013113 sec
+ - run algorithm: 0.0432599 sec
+ - print output: 0.000239134 sec
+ - deinitialize engine: 1.38283e-05 sec
+Timing results:
+ - load graph: Timing results:
+ - Timing results:
+Completed 2 iterations 
+load graph0.0351291 sec
+ - initialize engine: 1.69277e-05 sec
+ - run algorithm: 0.0433819 sec
+ - print output: 9.60827e-05 sec
+ - deinitialize engine: 1.50204e-05 sec
+ - : 
+
+ - load graph: 0.035171 sec
+ - initialize engine: 1.69277e-05 sec
+ - run algorithm: 0.043478 sec
+ - print output: 7.10487e-05 sec
+ - deinitialize engine: 1.50204e-05 sec
+0.0352001Completed 2 iterations 
+ secTiming results:
+ - load graph: 0.0351491 sec
+ - initialize engine: 2.09808e-05 sec
+ - run algorithm: 0.0433941 sec
+ - print output: 1.97887e-05 sec
+ - deinitialize engine: 1.62125e-05 sec
+ - load graphTiming results:
+ - load graph: : 
+Timing results:load graph0.035136Completed 2 iterations 
+:  sec - Timing results:
+ - load graph: 0.0349531 sec
+ - initialize engine: 2.28882e-05 sec
+ - run algorithm: 0.0434101 sec
+ - print output: 1.90735e-05 sec
+ - deinitialize engine: 1.88351e-05 sec
+0.035042 sec
+ - initialize engine: 1.28746e-05 sec
+ - run algorithm: 0.0434251 sec
+ - print output: 4.50611e-05 sec
+ - deinitialize engine: 1.38283e-05 sec
+
+initialize engineCompleted 2 iterations 
+Timing results:
+ - load graph: 0.0350239 sec
+ - initialize engine: 1.40667e-05 sec
+ - run algorithm: 0.043576 sec
+ - print output: 2.88486e-05 sec
+ - deinitialize engine: 1.5974e-05 sec
+ - : Completed 2 iterations 
+2.47955e-05Timing results:0.0351541initialize engine sec:  secCompleted 2 iterations 
+
+1.21593e-05
+
+ - load graph: 0.035013 sec
+ - initialize engine: 1.50204e-05 sec
+ - run algorithm: 0.0434968 sec
+ - print output: 1.21593e-05 sec
+ - deinitialize engine: 1.19209e-05 sec
+ -  sec - initialize engine
+run algorithm - : : 1.28746e-05run algorithm0.0434132Timing results:
+ - load graph: 0.0350001 sec
+ - initialize engine: 2.09808e-05 sec
+ - run algorithm: 0.043396 sec
+ - print output: 1.90735e-05 sec
+ - deinitialize engine sec:  sec
+
+0.04333
+Timing results:
+ - load graph: 0.0349779 sec
+ - initialize engine: 1.21593e-05 sec
+ - run algorithm: 0.043376 sec
+ - print output: 1.19209e-05 sec
+ - deinitialize engine: 1.50204e-05 -  sec - Completed 2 iterations 
+ - run algorithm
+print output:  - : load graph0.043412print output8.98838e-05: 1.5974e-05 sec
+ sec:  sec: 
+0.000163078
+Timing results:
+ - load graph:  -  sec - 0.0347209print output
+deinitialize engine sec
+:  - :  secTiming results:
+ - load graph: 0.0349541 sec
+ - initialize engine: 1.09673e-05 sec
+ - run algorithm: 0.04352 sec
+ - print output: 1.40667e-05 sec
+ - deinitialize engine: 1.19209e-05 sec
+2.81334e-05deinitialize engine1.5974e-05 sec:  sec
+
+1.38283e-05
+0.0348072 sec
+ - initialize engine: 1.19209e-05 sec
+ - run algorithm: 0.043494 sec
+ - print output: 1.09673e-05 sec
+ - deinitialize engine: 1.19209e-05 sec
+ -  sec - deinitialize engine
+initialize engine: : 1.50204e-051.00136e-05 sec sec
+
+ - run algorithm: 0.0436399 sec
+ - print output: 1.3113e-05 sec
+ - deinitialize engine: 1.90735e-05 sec
+[graphalytics-graphmat:05772] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[graphalytics-graphmat:05772] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Report execution r772774 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r772774 at akka.tcp://executor-service@localhost:8011/user/executor-service.

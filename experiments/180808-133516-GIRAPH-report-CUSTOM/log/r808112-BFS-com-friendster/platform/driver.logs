@@ -1,0 +1,8 @@
+StartTime: 1533741276214
+Runner executing benchmark r808112.
+Executing algorithm "Breadth first search" on graph "com-friendster".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r808112_BFS-com-friendster at hdfs.
+Report execution r808112 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r808112 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741402043

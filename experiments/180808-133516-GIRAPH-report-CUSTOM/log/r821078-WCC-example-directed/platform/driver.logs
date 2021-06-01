@@ -1,0 +1,8 @@
+StartTime: 1533735392032
+Runner executing benchmark r821078.
+Executing algorithm "Connected components" on graph "example-directed".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r821078_WCC-example-directed at hdfs.
+Report execution r821078 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r821078 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533735420805

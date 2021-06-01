@@ -1,0 +1,1360 @@
+12:57 [INFO ] 
+12:57 [INFO ] ##################################################################################
+12:57 [INFO ] ##################################################################################
+12:57 [INFO ] ##                                                                              ##
+12:57 [INFO ] ##                                                                              ##
+12:57 [INFO ] ##                 Graphalytics benchmark for GRAPHMAT platform                 ##
+12:57 [INFO ] ##                                                                              ##
+12:57 [INFO ] ##                                                                              ##
+12:57 [INFO ] ##################################################################################
+12:57 [INFO ] ##################################################################################
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Name: graphalytics-core (1.0.0)
+12:57 [INFO ] Source: https://github.com/ldbc/ldbc_graphalytics
+12:57 [INFO ] Build: branch master, commit ac19e9 
+12:57 [INFO ] Date: 2018/August/02 09:15:59 UTC
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Name: graphalytics-platforms-graphmat (0.2-SNAPSHOT)
+12:57 [INFO ] Source: https://github.com/atlarge-research/graphalytics-platforms-graphmat
+12:57 [INFO ] Build: branch master, commit e075b3 
+12:57 [INFO ] Date: 2018/August/17 08:48:00 UTC
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Executing a CUSTOM Benchmark on GRAPHMAT [1 experiments, 36 jobs, 36 runs]:
+12:57 [INFO ]  Experiment custom:exp contains 36 jobs: [example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x), example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x), example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x), example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x), example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x), example-directed(1x), datagen-8_4-fb(1x), dota-league(1x), datagen-8_9-fb(1x), datagen-7_9-fb(1x), example-undirected(1x)]
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Benchmark started: 2018/August/17 12:57:35 UTC.
+12:57 [INFO ] 
+12:57 [INFO ] Granula plugin is found, but is disabled.
+12:57 [INFO ] Loaded "granula" plugin:
+12:57 [INFO ] Reporting Benchmark Results...
+12:57 [INFO ] 
+12:57 [INFO ] Preparing graph "example-directed" with 2 different formats: [example-directed, example-directed.e_weight]
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Preprocessing graph "example-directed:example-directed.e_weight" for 1 benchmark run(s).
+12:57 [INFO ] Formatting (Minimizing) graph ""example-directed:example-directed.e_weight""
+12:57 [INFO ] Found vertex file for graph "example-directed" at "/home/hduser/graphalytics-datasets/example-directed.v".
+12:57 [INFO ] Found edge file for graph "example-directed.e_weight" at "/home/hduser/graphalytics-datasets/example-directed.e".
+12:57 [INFO ] Formatted (Minimizing) graph ""example-directed:example-directed.e_weight""
+12:57 [INFO ] ----------------- Loading graph ""example-directed:example-directed.e_weight"" -----------------
+12:57 [INFO ] Preprocessing graph "example-directed.e_weight": generating intermediate mtx format.
+12:57 [INFO ] Stored vertex translation in: intermediate/example-directed.e_weight_vertex_translation.bin
+12:57 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/example-directed.e_weight.txt intermediate/example-directed.e_weight.mtx 
+12:57 [INFO ] ----------------- Loaded graph ""example-directed:example-directed.e_weight"" -----------------
+12:57 [INFO ] The loading process finished within 6 seconds
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] ============= Benchmark r755973 [1/36] =============
+12:57 [INFO ] Benchmark specification: [BenchmarkRun [r755973, SSSP[src=1, prop=weight], example-directed, timeout=3600s]]
+12:57 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:57 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r755973-SSSP-example-directed]
+12:57 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:57 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/example-directed.e]
+12:57 [INFO ] Output directory: [./output/r755973-SSSP-example-directed]
+12:57 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-SSSP]
+12:57 [INFO ] 
+12:57 [INFO ] The preparation for the benchmark succeed (if needed).
+12:57 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:57 [INFO ] The execution process finished within 2 seconds.
+12:57 [INFO ] The validation process finished within 0 seconds.
+12:57 [INFO ] The benchmark results are retrieved.
+12:57 [WARN ] Terminating runner process forcibly.
+12:57 [WARN ] Terminating process 2291 focibly.
+12:57 [WARN ] Executing command "kill -9 2291"
+12:57 [ERROR] Failed to kill runner process.
+12:57 [INFO ] The benchmark run is sucessfully terminated.
+12:57 [INFO ] Benchmark r755973is succeed, T_l=6.159s, T_m=1.461s, T_p=0.020s.
+12:57 [INFO ] ============= Benchmark r755973 [2/36] =============
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Deleting graph "example-directed:example-directed.e_weight".
+12:57 [INFO ] ----------------- Deleting graph ""example-directed:example-directed.e_weight"" -----------------
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx1'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx2'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx3'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx4'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx5'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx6'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx7'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx8'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx9'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx10'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx11'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx12'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx13'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx14'
+12:57 [WARN ] failed to delete intermediate file 'intermediate/example-directed.e_weight.mtx15'
+12:57 [INFO ] ----------------- Deleted graph ""example-directed:example-directed.e_weight"" -----------------
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] Preprocessing graph "example-directed:example-directed" for 5 benchmark run(s).
+12:57 [INFO ] Formatting (Minimizing) graph ""example-directed:example-directed""
+12:57 [INFO ] Found vertex file for graph "example-directed" at "/home/hduser/graphalytics-datasets/example-directed.v".
+12:57 [INFO ] Generating edge file for graph "example-directed" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e" with edge properties PropertyList{properties=[]}.
+12:57 [INFO ] Done generating edge file for graph "example-directed".
+12:57 [INFO ] Formatted (Minimizing) graph ""example-directed:example-directed""
+12:57 [INFO ] ----------------- Loading graph ""example-directed:example-directed"" -----------------
+12:57 [INFO ] Preprocessing graph "example-directed": generating intermediate mtx format.
+12:57 [INFO ] Stored vertex translation in: intermediate/example-directed_vertex_translation.bin
+12:57 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/example-directed.txt intermediate/example-directed.mtx 
+12:57 [INFO ] ----------------- Loaded graph ""example-directed:example-directed"" -----------------
+12:57 [INFO ] The loading process finished within 1 seconds
+12:57 [INFO ] 
+12:57 [INFO ] 
+12:57 [INFO ] ============= Benchmark r761644 [2/36] =============
+12:57 [INFO ] Benchmark specification: [BenchmarkRun [r761644, WCC[none], example-directed, timeout=3600s]]
+12:57 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:57 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r761644-WCC-example-directed]
+12:57 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:57 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e]
+12:57 [INFO ] Output directory: [./output/r761644-WCC-example-directed]
+12:57 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-WCC]
+12:57 [INFO ] 
+12:57 [INFO ] The preparation for the benchmark succeed (if needed).
+12:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:58 [INFO ] The execution process finished within 2 seconds.
+12:58 [INFO ] The validation process finished within 0 seconds.
+12:58 [INFO ] The benchmark results are retrieved.
+12:58 [WARN ] Terminating runner process forcibly.
+12:58 [WARN ] Terminating process 2400 focibly.
+12:58 [WARN ] Executing command "kill -9 2400"
+12:58 [ERROR] Failed to kill runner process.
+12:58 [INFO ] The benchmark run is sucessfully terminated.
+12:58 [INFO ] Benchmark r761644is succeed, T_l=1.402s, T_m=1.508s, T_p=0.038s.
+12:58 [INFO ] ============= Benchmark r761644 [3/36] =============
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] ============= Benchmark r517723 [3/36] =============
+12:58 [INFO ] Benchmark specification: [BenchmarkRun [r517723, LCC[none], example-directed, timeout=3600s]]
+12:58 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:58 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r517723-LCC-example-directed]
+12:58 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:58 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e]
+12:58 [INFO ] Output directory: [./output/r517723-LCC-example-directed]
+12:58 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-LCC]
+12:58 [INFO ] 
+12:58 [INFO ] The preparation for the benchmark succeed (if needed).
+12:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:58 [INFO ] The execution process finished within 2 seconds.
+12:58 [INFO ] The validation process finished within 0 seconds.
+12:58 [INFO ] The benchmark results are retrieved.
+12:58 [WARN ] Terminating runner process forcibly.
+12:58 [WARN ] Terminating process 2479 focibly.
+12:58 [WARN ] Executing command "kill -9 2479"
+12:58 [ERROR] Failed to kill runner process.
+12:58 [INFO ] The benchmark run is sucessfully terminated.
+12:58 [INFO ] Benchmark r517723is succeed, T_l=1.402s, T_m=1.525s, T_p=0.081s.
+12:58 [INFO ] ============= Benchmark r517723 [4/36] =============
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] ============= Benchmark r585397 [4/36] =============
+12:58 [INFO ] Benchmark specification: [BenchmarkRun [r585397, PR[damp=0.85, iter=2], example-directed, timeout=3600s]]
+12:58 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:58 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r585397-PR-example-directed]
+12:58 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:58 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e]
+12:58 [INFO ] Output directory: [./output/r585397-PR-example-directed]
+12:58 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-PR]
+12:58 [INFO ] 
+12:58 [INFO ] The preparation for the benchmark succeed (if needed).
+12:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:58 [INFO ] The execution process finished within 2 seconds.
+12:58 [INFO ] The validation process finished within 0 seconds.
+12:58 [INFO ] The benchmark results are retrieved.
+12:58 [WARN ] Terminating runner process forcibly.
+12:58 [WARN ] Terminating process 2559 focibly.
+12:58 [WARN ] Executing command "kill -9 2559"
+12:58 [ERROR] Failed to kill runner process.
+12:58 [INFO ] The benchmark run is sucessfully terminated.
+12:58 [INFO ] Benchmark r585397is succeed, T_l=1.402s, T_m=1.477s, T_p=0.039s.
+12:58 [INFO ] ============= Benchmark r585397 [5/36] =============
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] ============= Benchmark r552385 [5/36] =============
+12:58 [INFO ] Benchmark specification: [BenchmarkRun [r552385, CDLP[iter=2], example-directed, timeout=3600s]]
+12:58 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:58 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r552385-CDLP-example-directed]
+12:58 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:58 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e]
+12:58 [INFO ] Output directory: [./output/r552385-CDLP-example-directed]
+12:58 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-CDLP]
+12:58 [INFO ] 
+12:58 [INFO ] The preparation for the benchmark succeed (if needed).
+12:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:58 [INFO ] The execution process finished within 2 seconds.
+12:58 [INFO ] The validation process finished within 0 seconds.
+12:58 [INFO ] The benchmark results are retrieved.
+12:58 [WARN ] Terminating runner process forcibly.
+12:58 [WARN ] Terminating process 2638 focibly.
+12:58 [WARN ] Executing command "kill -9 2638"
+12:58 [ERROR] Failed to kill runner process.
+12:58 [INFO ] The benchmark run is sucessfully terminated.
+12:58 [INFO ] Benchmark r552385is succeed, T_l=1.402s, T_m=1.484s, T_p=0.060s.
+12:58 [INFO ] ============= Benchmark r552385 [6/36] =============
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] 
+12:58 [INFO ] ============= Benchmark r709841 [6/36] =============
+12:58 [INFO ] Benchmark specification: [BenchmarkRun [r709841, BFS[src=1], example-directed, timeout=3600s]]
+12:58 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+12:58 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r709841-BFS-example-directed]
+12:58 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-directed.v]
+12:58 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-directed.e]
+12:58 [INFO ] Output directory: [./output/r709841-BFS-example-directed]
+12:58 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-directed-BFS]
+12:58 [INFO ] 
+12:58 [INFO ] The preparation for the benchmark succeed (if needed).
+12:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+12:58 [INFO ] The execution process finished within 2 seconds.
+12:58 [INFO ] The validation process finished within 0 seconds.
+12:58 [INFO ] The benchmark results are retrieved.
+12:58 [WARN ] Terminating runner process forcibly.
+12:58 [WARN ] Terminating process 2717 focibly.
+12:58 [WARN ] Executing command "kill -9 2717"
+12:58 [ERROR] Failed to kill runner process.
+12:59 [INFO ] The benchmark run is sucessfully terminated.
+12:59 [INFO ] Benchmark r709841is succeed, T_l=1.402s, T_m=1.502s, T_p=0.033s.
+12:59 [INFO ] ============= Benchmark r709841 [7/36] =============
+12:59 [INFO ] 
+12:59 [INFO ] 
+12:59 [INFO ] Deleting graph "example-directed:example-directed".
+12:59 [INFO ] ----------------- Deleting graph ""example-directed:example-directed"" -----------------
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx1'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx2'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx3'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx4'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx5'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx6'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx7'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx8'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx9'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx10'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx11'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx12'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx13'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx14'
+12:59 [WARN ] failed to delete intermediate file 'intermediate/example-directed.mtx15'
+12:59 [INFO ] ----------------- Deleted graph ""example-directed:example-directed"" -----------------
+12:59 [INFO ] 
+12:59 [INFO ] 
+12:59 [INFO ] Preparing graph "datagen-8_4-fb" with 2 different formats: [datagen-8_4-fb.e_weight, datagen-8_4-fb]
+12:59 [INFO ] 
+12:59 [INFO ] 
+12:59 [INFO ] Preprocessing graph "datagen-8_4-fb:datagen-8_4-fb" for 5 benchmark run(s).
+12:59 [INFO ] Formatting (Minimizing) graph ""datagen-8_4-fb:datagen-8_4-fb""
+12:59 [INFO ] Found vertex file for graph "datagen-8_4-fb" at "/home/hduser/graphalytics-datasets/datagen-8_4-fb.v".
+12:59 [INFO ] Generating edge file for graph "datagen-8_4-fb" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e" with edge properties PropertyList{properties=[]}.
+13:02 [INFO ] Done generating edge file for graph "datagen-8_4-fb".
+13:02 [INFO ] Formatted (Minimizing) graph ""datagen-8_4-fb:datagen-8_4-fb""
+13:02 [INFO ] ----------------- Loading graph ""datagen-8_4-fb:datagen-8_4-fb"" -----------------
+13:02 [INFO ] Preprocessing graph "datagen-8_4-fb": generating intermediate mtx format.
+13:06 [INFO ] Stored vertex translation in: intermediate/datagen-8_4-fb_vertex_translation.bin
+13:06 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/datagen-8_4-fb.txt intermediate/datagen-8_4-fb.mtx 
+13:08 [INFO ] ----------------- Loaded graph ""datagen-8_4-fb:datagen-8_4-fb"" -----------------
+13:08 [INFO ] The loading process finished within 360 seconds
+13:08 [INFO ] 
+13:08 [INFO ] 
+13:08 [INFO ] ============= Benchmark r613261 [7/36] =============
+13:08 [INFO ] Benchmark specification: [BenchmarkRun [r613261, PR[damp=0.85, iter=10], datagen-8_4-fb, timeout=3600s]]
+13:08 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:08 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r613261-PR-datagen-8_4-fb]
+13:08 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:08 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e]
+13:08 [INFO ] Output directory: [./output/r613261-PR-datagen-8_4-fb]
+13:08 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-PR]
+13:08 [INFO ] 
+13:08 [INFO ] The preparation for the benchmark succeed (if needed).
+13:09 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:09 [INFO ] The execution process finished within 22 seconds.
+13:09 [INFO ] The validation process finished within 0 seconds.
+13:09 [INFO ] The benchmark results are retrieved.
+13:09 [WARN ] Terminating runner process forcibly.
+13:09 [WARN ] Terminating process 2886 focibly.
+13:09 [WARN ] Executing command "kill -9 2886"
+13:09 [ERROR] Failed to kill runner process.
+13:09 [INFO ] The benchmark run is sucessfully terminated.
+13:09 [INFO ] Benchmark r613261is succeed, T_l=360.069s, T_m=21.302s, T_p=0.945s.
+13:09 [INFO ] ============= Benchmark r613261 [8/36] =============
+13:09 [INFO ] 
+13:09 [INFO ] 
+13:09 [INFO ] 
+13:09 [INFO ] ============= Benchmark r647311 [8/36] =============
+13:09 [INFO ] Benchmark specification: [BenchmarkRun [r647311, LCC[none], datagen-8_4-fb, timeout=3600s]]
+13:09 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:09 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r647311-LCC-datagen-8_4-fb]
+13:09 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:09 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e]
+13:09 [INFO ] Output directory: [./output/r647311-LCC-datagen-8_4-fb]
+13:09 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-LCC]
+13:09 [INFO ] 
+13:09 [INFO ] The preparation for the benchmark succeed (if needed).
+13:09 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:10 [INFO ] The execution process finished within 36 seconds.
+13:10 [INFO ] The validation process finished within 0 seconds.
+13:10 [INFO ] The benchmark results are retrieved.
+13:10 [WARN ] Terminating runner process forcibly.
+13:10 [WARN ] Terminating process 2972 focibly.
+13:10 [WARN ] Executing command "kill -9 2972"
+13:10 [ERROR] Failed to kill runner process.
+13:10 [INFO ] The benchmark run is sucessfully terminated.
+13:10 [INFO ] Benchmark r647311is succeed, T_l=360.069s, T_m=35.543s, T_p=14.228s.
+13:10 [INFO ] ============= Benchmark r647311 [9/36] =============
+13:10 [INFO ] 
+13:10 [INFO ] 
+13:10 [INFO ] 
+13:10 [INFO ] ============= Benchmark r808888 [9/36] =============
+13:10 [INFO ] Benchmark specification: [BenchmarkRun [r808888, WCC[none], datagen-8_4-fb, timeout=3600s]]
+13:10 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:10 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r808888-WCC-datagen-8_4-fb]
+13:10 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:10 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e]
+13:10 [INFO ] Output directory: [./output/r808888-WCC-datagen-8_4-fb]
+13:10 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-WCC]
+13:10 [INFO ] 
+13:10 [INFO ] The preparation for the benchmark succeed (if needed).
+13:10 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:10 [INFO ] The execution process finished within 19 seconds.
+13:10 [INFO ] The validation process finished within 0 seconds.
+13:10 [INFO ] The benchmark results are retrieved.
+13:10 [WARN ] Terminating runner process forcibly.
+13:10 [WARN ] Terminating process 3051 focibly.
+13:10 [WARN ] Executing command "kill -9 3051"
+13:10 [ERROR] Failed to kill runner process.
+13:10 [INFO ] The benchmark run is sucessfully terminated.
+13:10 [INFO ] Benchmark r808888is succeed, T_l=360.069s, T_m=18.450s, T_p=0.744s.
+13:10 [INFO ] ============= Benchmark r808888 [10/36] =============
+13:10 [INFO ] 
+13:10 [INFO ] 
+13:10 [INFO ] 
+13:10 [INFO ] ============= Benchmark r898666 [10/36] =============
+13:10 [INFO ] Benchmark specification: [BenchmarkRun [r898666, CDLP[iter=10], datagen-8_4-fb, timeout=3600s]]
+13:10 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:10 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r898666-CDLP-datagen-8_4-fb]
+13:10 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:10 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e]
+13:10 [INFO ] Output directory: [./output/r898666-CDLP-datagen-8_4-fb]
+13:10 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-CDLP]
+13:10 [INFO ] 
+13:10 [INFO ] The preparation for the benchmark succeed (if needed).
+13:10 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:11 [INFO ] The execution process finished within 30 seconds.
+13:11 [INFO ] The validation process finished within 0 seconds.
+13:11 [INFO ] The benchmark results are retrieved.
+13:11 [WARN ] Terminating runner process forcibly.
+13:11 [WARN ] Terminating process 3156 focibly.
+13:11 [WARN ] Executing command "kill -9 3156"
+13:11 [ERROR] Failed to kill runner process.
+13:11 [INFO ] The benchmark run is sucessfully terminated.
+13:11 [INFO ] Benchmark r898666is succeed, T_l=360.069s, T_m=29.936s, T_p=10.766s.
+13:11 [INFO ] ============= Benchmark r898666 [11/36] =============
+13:11 [INFO ] 
+13:11 [INFO ] 
+13:11 [INFO ] 
+13:11 [INFO ] ============= Benchmark r901913 [11/36] =============
+13:11 [INFO ] Benchmark specification: [BenchmarkRun [r901913, BFS[src=6], datagen-8_4-fb, timeout=3600s]]
+13:11 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:11 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r901913-BFS-datagen-8_4-fb]
+13:11 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:11 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_4-fb.e]
+13:11 [INFO ] Output directory: [./output/r901913-BFS-datagen-8_4-fb]
+13:11 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-BFS]
+13:11 [INFO ] 
+13:11 [INFO ] The preparation for the benchmark succeed (if needed).
+13:11 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:11 [INFO ] The execution process finished within 18 seconds.
+13:11 [INFO ] The validation process finished within 0 seconds.
+13:11 [INFO ] The benchmark results are retrieved.
+13:11 [WARN ] Terminating runner process forcibly.
+13:11 [WARN ] Terminating process 3234 focibly.
+13:11 [WARN ] Executing command "kill -9 3234"
+13:11 [ERROR] Failed to kill runner process.
+13:12 [INFO ] The benchmark run is sucessfully terminated.
+13:12 [INFO ] Benchmark r901913is succeed, T_l=360.069s, T_m=17.739s, T_p=0.208s.
+13:12 [INFO ] ============= Benchmark r901913 [12/36] =============
+13:12 [INFO ] 
+13:12 [INFO ] 
+13:12 [INFO ] Deleting graph "datagen-8_4-fb:datagen-8_4-fb".
+13:12 [INFO ] ----------------- Deleting graph ""datagen-8_4-fb:datagen-8_4-fb"" -----------------
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx1'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx2'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx3'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx4'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx5'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx6'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx7'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx8'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx9'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx10'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx11'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx12'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx13'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx14'
+13:12 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.mtx15'
+13:12 [INFO ] ----------------- Deleted graph ""datagen-8_4-fb:datagen-8_4-fb"" -----------------
+13:12 [INFO ] 
+13:12 [INFO ] 
+13:12 [INFO ] Preprocessing graph "datagen-8_4-fb:datagen-8_4-fb.e_weight" for 1 benchmark run(s).
+13:12 [INFO ] Formatting (Minimizing) graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight""
+13:12 [INFO ] Found vertex file for graph "datagen-8_4-fb" at "/home/hduser/graphalytics-datasets/datagen-8_4-fb.v".
+13:12 [INFO ] Found edge file for graph "datagen-8_4-fb.e_weight" at "/home/hduser/graphalytics-datasets/datagen-8_4-fb.e".
+13:12 [INFO ] Formatted (Minimizing) graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight""
+13:12 [INFO ] ----------------- Loading graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight"" -----------------
+13:12 [INFO ] Preprocessing graph "datagen-8_4-fb.e_weight": generating intermediate mtx format.
+13:16 [INFO ] Stored vertex translation in: intermediate/datagen-8_4-fb.e_weight_vertex_translation.bin
+13:16 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/datagen-8_4-fb.e_weight.txt intermediate/datagen-8_4-fb.e_weight.mtx 
+13:20 [INFO ] ----------------- Loaded graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight"" -----------------
+13:20 [INFO ] The loading process finished within 521 seconds
+13:20 [INFO ] 
+13:20 [INFO ] 
+13:20 [INFO ] ============= Benchmark r485181 [12/36] =============
+13:20 [INFO ] Benchmark specification: [BenchmarkRun [r485181, SSSP[src=6, prop=weight], datagen-8_4-fb, timeout=3600s]]
+13:20 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:20 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r485181-SSSP-datagen-8_4-fb]
+13:20 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.v]
+13:20 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/datagen-8_4-fb.e]
+13:20 [INFO ] Output directory: [./output/r485181-SSSP-datagen-8_4-fb]
+13:20 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_4-fb-SSSP]
+13:20 [INFO ] 
+13:20 [INFO ] The preparation for the benchmark succeed (if needed).
+13:20 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:21 [INFO ] The execution process finished within 21 seconds.
+13:21 [INFO ] The validation process finished within 0 seconds.
+13:21 [INFO ] The benchmark results are retrieved.
+13:21 [WARN ] Terminating runner process forcibly.
+13:21 [WARN ] Terminating process 3393 focibly.
+13:21 [WARN ] Executing command "kill -9 3393"
+13:21 [ERROR] Failed to kill runner process.
+13:21 [INFO ] The benchmark run is sucessfully terminated.
+13:21 [INFO ] Benchmark r485181is succeed, T_l=521.506s, T_m=20.347s, T_p=0.231s.
+13:21 [INFO ] ============= Benchmark r485181 [13/36] =============
+13:21 [INFO ] 
+13:21 [INFO ] 
+13:21 [INFO ] Deleting graph "datagen-8_4-fb:datagen-8_4-fb.e_weight".
+13:21 [INFO ] ----------------- Deleting graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight"" -----------------
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx1'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx2'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx3'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx4'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx5'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx6'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx7'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx8'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx9'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx10'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx11'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx12'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx13'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx14'
+13:21 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_4-fb.e_weight.mtx15'
+13:21 [INFO ] ----------------- Deleted graph ""datagen-8_4-fb:datagen-8_4-fb.e_weight"" -----------------
+13:21 [INFO ] 
+13:21 [INFO ] 
+13:21 [INFO ] Preparing graph "dota-league" with 2 different formats: [dota-league, dota-league.e_weight]
+13:21 [INFO ] 
+13:21 [INFO ] 
+13:21 [INFO ] Preprocessing graph "dota-league:dota-league.e_weight" for 1 benchmark run(s).
+13:21 [INFO ] Formatting (Minimizing) graph ""dota-league:dota-league.e_weight""
+13:21 [INFO ] Found vertex file for graph "dota-league" at "/home/hduser/graphalytics-datasets/dota-league.v".
+13:21 [INFO ] Found edge file for graph "dota-league.e_weight" at "/home/hduser/graphalytics-datasets/dota-league.e".
+13:21 [INFO ] Formatted (Minimizing) graph ""dota-league:dota-league.e_weight""
+13:21 [INFO ] ----------------- Loading graph ""dota-league:dota-league.e_weight"" -----------------
+13:21 [INFO ] Preprocessing graph "dota-league.e_weight": generating intermediate mtx format.
+13:21 [INFO ] Stored vertex translation in: intermediate/dota-league.e_weight_vertex_translation.bin
+13:21 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/dota-league.e_weight.txt intermediate/dota-league.e_weight.mtx 
+13:22 [INFO ] ----------------- Loaded graph ""dota-league:dota-league.e_weight"" -----------------
+13:22 [INFO ] The loading process finished within 81 seconds
+13:22 [INFO ] 
+13:22 [INFO ] 
+13:22 [INFO ] ============= Benchmark r488604 [13/36] =============
+13:22 [INFO ] Benchmark specification: [BenchmarkRun [r488604, SSSP[src=287770, prop=weight], dota-league, timeout=3600s]]
+13:22 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:22 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r488604-SSSP-dota-league]
+13:22 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:22 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/dota-league.e]
+13:22 [INFO ] Output directory: [./output/r488604-SSSP-dota-league]
+13:22 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-SSSP]
+13:22 [INFO ] 
+13:22 [INFO ] The preparation for the benchmark succeed (if needed).
+13:22 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:22 [INFO ] The execution process finished within 3 seconds.
+13:22 [INFO ] The validation process finished within 0 seconds.
+13:22 [INFO ] The benchmark results are retrieved.
+13:22 [WARN ] Terminating runner process forcibly.
+13:22 [WARN ] Terminating process 3508 focibly.
+13:22 [WARN ] Executing command "kill -9 3508"
+13:22 [ERROR] Failed to kill runner process.
+13:22 [INFO ] The benchmark run is sucessfully terminated.
+13:22 [INFO ] Benchmark r488604is succeed, T_l=81.838s, T_m=2.465s, T_p=0.155s.
+13:22 [INFO ] ============= Benchmark r488604 [14/36] =============
+13:22 [INFO ] 
+13:22 [INFO ] 
+13:22 [INFO ] Deleting graph "dota-league:dota-league.e_weight".
+13:22 [INFO ] ----------------- Deleting graph ""dota-league:dota-league.e_weight"" -----------------
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx1'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx2'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx3'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx4'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx5'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx6'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx7'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx8'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx9'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx10'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx11'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx12'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx13'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx14'
+13:22 [WARN ] failed to delete intermediate file 'intermediate/dota-league.e_weight.mtx15'
+13:22 [INFO ] ----------------- Deleted graph ""dota-league:dota-league.e_weight"" -----------------
+13:22 [INFO ] 
+13:22 [INFO ] 
+13:22 [INFO ] Preprocessing graph "dota-league:dota-league" for 5 benchmark run(s).
+13:22 [INFO ] Formatting (Minimizing) graph ""dota-league:dota-league""
+13:22 [INFO ] Found vertex file for graph "dota-league" at "/home/hduser/graphalytics-datasets/dota-league.v".
+13:22 [INFO ] Generating edge file for graph "dota-league" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e" with edge properties PropertyList{properties=[]}.
+13:23 [INFO ] Done generating edge file for graph "dota-league".
+13:23 [INFO ] Formatted (Minimizing) graph ""dota-league:dota-league""
+13:23 [INFO ] ----------------- Loading graph ""dota-league:dota-league"" -----------------
+13:23 [INFO ] Preprocessing graph "dota-league": generating intermediate mtx format.
+13:23 [INFO ] Stored vertex translation in: intermediate/dota-league_vertex_translation.bin
+13:23 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/dota-league.txt intermediate/dota-league.mtx 
+13:24 [INFO ] ----------------- Loaded graph ""dota-league:dota-league"" -----------------
+13:24 [INFO ] The loading process finished within 51 seconds
+13:24 [INFO ] 
+13:24 [INFO ] 
+13:24 [INFO ] ============= Benchmark r658444 [14/36] =============
+13:24 [INFO ] Benchmark specification: [BenchmarkRun [r658444, WCC[none], dota-league, timeout=3600s]]
+13:24 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:24 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r658444-WCC-dota-league]
+13:24 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:24 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e]
+13:24 [INFO ] Output directory: [./output/r658444-WCC-dota-league]
+13:24 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-WCC]
+13:24 [INFO ] 
+13:24 [INFO ] The preparation for the benchmark succeed (if needed).
+13:24 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:24 [INFO ] The execution process finished within 3 seconds.
+13:24 [INFO ] The validation process finished within 0 seconds.
+13:24 [INFO ] The benchmark results are retrieved.
+13:24 [WARN ] Terminating runner process forcibly.
+13:24 [WARN ] Terminating process 3623 focibly.
+13:24 [WARN ] Executing command "kill -9 3623"
+13:24 [ERROR] Failed to kill runner process.
+13:24 [INFO ] The benchmark run is sucessfully terminated.
+13:24 [INFO ] Benchmark r658444is succeed, T_l=51.944s, T_m=2.419s, T_p=0.187s.
+13:24 [INFO ] ============= Benchmark r658444 [15/36] =============
+13:24 [INFO ] 
+13:24 [INFO ] 
+13:24 [INFO ] 
+13:24 [INFO ] ============= Benchmark r551627 [15/36] =============
+13:24 [INFO ] Benchmark specification: [BenchmarkRun [r551627, LCC[none], dota-league, timeout=3600s]]
+13:24 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:24 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r551627-LCC-dota-league]
+13:24 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:24 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e]
+13:24 [INFO ] Output directory: [./output/r551627-LCC-dota-league]
+13:24 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-LCC]
+13:24 [INFO ] 
+13:24 [INFO ] The preparation for the benchmark succeed (if needed).
+13:24 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:24 [INFO ] The execution process finished within 29 seconds.
+13:24 [INFO ] The validation process finished within 0 seconds.
+13:24 [INFO ] The benchmark results are retrieved.
+13:24 [WARN ] Terminating runner process forcibly.
+13:24 [WARN ] Terminating process 3704 focibly.
+13:24 [WARN ] Executing command "kill -9 3704"
+13:24 [ERROR] Failed to kill runner process.
+13:25 [INFO ] The benchmark run is sucessfully terminated.
+13:25 [INFO ] Benchmark r551627is succeed, T_l=51.944s, T_m=28.825s, T_p=26.517s.
+13:25 [INFO ] ============= Benchmark r551627 [16/36] =============
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] ============= Benchmark r738819 [16/36] =============
+13:25 [INFO ] Benchmark specification: [BenchmarkRun [r738819, BFS[src=287770], dota-league, timeout=3600s]]
+13:25 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:25 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r738819-BFS-dota-league]
+13:25 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:25 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e]
+13:25 [INFO ] Output directory: [./output/r738819-BFS-dota-league]
+13:25 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-BFS]
+13:25 [INFO ] 
+13:25 [INFO ] The preparation for the benchmark succeed (if needed).
+13:25 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:25 [INFO ] The execution process finished within 3 seconds.
+13:25 [INFO ] The validation process finished within 0 seconds.
+13:25 [INFO ] The benchmark results are retrieved.
+13:25 [WARN ] Terminating runner process forcibly.
+13:25 [WARN ] Terminating process 3788 focibly.
+13:25 [WARN ] Executing command "kill -9 3788"
+13:25 [ERROR] Failed to kill runner process.
+13:25 [INFO ] The benchmark run is sucessfully terminated.
+13:25 [INFO ] Benchmark r738819is succeed, T_l=51.944s, T_m=2.303s, T_p=0.049s.
+13:25 [INFO ] ============= Benchmark r738819 [17/36] =============
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] ============= Benchmark r744733 [17/36] =============
+13:25 [INFO ] Benchmark specification: [BenchmarkRun [r744733, CDLP[iter=10], dota-league, timeout=3600s]]
+13:25 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:25 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r744733-CDLP-dota-league]
+13:25 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:25 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e]
+13:25 [INFO ] Output directory: [./output/r744733-CDLP-dota-league]
+13:25 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-CDLP]
+13:25 [INFO ] 
+13:25 [INFO ] The preparation for the benchmark succeed (if needed).
+13:25 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:25 [INFO ] The execution process finished within 5 seconds.
+13:25 [INFO ] The validation process finished within 0 seconds.
+13:25 [INFO ] The benchmark results are retrieved.
+13:25 [WARN ] Terminating runner process forcibly.
+13:25 [WARN ] Terminating process 3867 focibly.
+13:25 [WARN ] Executing command "kill -9 3867"
+13:25 [ERROR] Failed to kill runner process.
+13:25 [INFO ] The benchmark run is sucessfully terminated.
+13:25 [INFO ] Benchmark r744733is succeed, T_l=51.944s, T_m=4.822s, T_p=2.493s.
+13:25 [INFO ] ============= Benchmark r744733 [18/36] =============
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] ============= Benchmark r630811 [18/36] =============
+13:25 [INFO ] Benchmark specification: [BenchmarkRun [r630811, PR[damp=0.85, iter=10], dota-league, timeout=3600s]]
+13:25 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:25 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r630811-PR-dota-league]
+13:25 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/dota-league.v]
+13:25 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/dota-league.e]
+13:25 [INFO ] Output directory: [./output/r630811-PR-dota-league]
+13:25 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/dota-league-PR]
+13:25 [INFO ] 
+13:25 [INFO ] The preparation for the benchmark succeed (if needed).
+13:25 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:25 [INFO ] The execution process finished within 3 seconds.
+13:25 [INFO ] The validation process finished within 0 seconds.
+13:25 [INFO ] The benchmark results are retrieved.
+13:25 [WARN ] Terminating runner process forcibly.
+13:25 [WARN ] Terminating process 3947 focibly.
+13:25 [WARN ] Executing command "kill -9 3947"
+13:25 [ERROR] Failed to kill runner process.
+13:25 [INFO ] The benchmark run is sucessfully terminated.
+13:25 [INFO ] Benchmark r630811is succeed, T_l=51.944s, T_m=2.733s, T_p=0.324s.
+13:25 [INFO ] ============= Benchmark r630811 [19/36] =============
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] Deleting graph "dota-league:dota-league".
+13:25 [INFO ] ----------------- Deleting graph ""dota-league:dota-league"" -----------------
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx1'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx2'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx3'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx4'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx5'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx6'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx7'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx8'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx9'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx10'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx11'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx12'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx13'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx14'
+13:25 [WARN ] failed to delete intermediate file 'intermediate/dota-league.mtx15'
+13:25 [INFO ] ----------------- Deleted graph ""dota-league:dota-league"" -----------------
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] Preparing graph "datagen-8_9-fb" with 2 different formats: [datagen-8_9-fb, datagen-8_9-fb.e_weight]
+13:25 [INFO ] 
+13:25 [INFO ] 
+13:25 [INFO ] Preprocessing graph "datagen-8_9-fb:datagen-8_9-fb" for 5 benchmark run(s).
+13:25 [INFO ] Formatting (Minimizing) graph ""datagen-8_9-fb:datagen-8_9-fb""
+13:25 [INFO ] Found vertex file for graph "datagen-8_9-fb" at "/home/hduser/graphalytics-datasets/datagen-8_9-fb.v".
+13:25 [INFO ] Generating edge file for graph "datagen-8_9-fb" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e" with edge properties PropertyList{properties=[]}.
+13:38 [INFO ] Done generating edge file for graph "datagen-8_9-fb".
+13:38 [INFO ] Formatted (Minimizing) graph ""datagen-8_9-fb:datagen-8_9-fb""
+13:38 [INFO ] ----------------- Loading graph ""datagen-8_9-fb:datagen-8_9-fb"" -----------------
+13:38 [INFO ] Preprocessing graph "datagen-8_9-fb": generating intermediate mtx format.
+13:48 [INFO ] Stored vertex translation in: intermediate/datagen-8_9-fb_vertex_translation.bin
+13:48 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/datagen-8_9-fb.txt intermediate/datagen-8_9-fb.mtx 
+13:57 [INFO ] ----------------- Loaded graph ""datagen-8_9-fb:datagen-8_9-fb"" -----------------
+13:57 [INFO ] The loading process finished within 1168 seconds
+13:57 [INFO ] 
+13:57 [INFO ] 
+13:57 [INFO ] ============= Benchmark r794507 [19/36] =============
+13:57 [INFO ] Benchmark specification: [BenchmarkRun [r794507, PR[damp=0.85, iter=10], datagen-8_9-fb, timeout=3600s]]
+13:57 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:57 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r794507-PR-datagen-8_9-fb]
+13:57 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+13:57 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e]
+13:57 [INFO ] Output directory: [./output/r794507-PR-datagen-8_9-fb]
+13:57 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-PR]
+13:57 [INFO ] 
+13:57 [INFO ] The preparation for the benchmark succeed (if needed).
+13:57 [INFO ] The benchmark runner becomes ready within 2 seconds.
+13:58 [INFO ] The execution process finished within 60 seconds.
+13:58 [INFO ] The validation process finished within 0 seconds.
+13:58 [INFO ] The benchmark results are retrieved.
+13:58 [WARN ] Terminating runner process forcibly.
+13:58 [WARN ] Terminating process 4243 focibly.
+13:58 [WARN ] Executing command "kill -9 4243"
+13:58 [ERROR] Failed to kill runner process.
+13:58 [INFO ] The benchmark run is sucessfully terminated.
+13:58 [INFO ] Benchmark r794507is succeed, T_l=1168.597s, T_m=59.560s, T_p=2.595s.
+13:58 [INFO ] ============= Benchmark r794507 [20/36] =============
+13:58 [INFO ] 
+13:58 [INFO ] 
+13:58 [INFO ] 
+13:58 [INFO ] ============= Benchmark r575649 [20/36] =============
+13:58 [INFO ] Benchmark specification: [BenchmarkRun [r575649, LCC[none], datagen-8_9-fb, timeout=3600s]]
+13:58 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+13:58 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r575649-LCC-datagen-8_9-fb]
+13:58 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+13:58 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e]
+13:58 [INFO ] Output directory: [./output/r575649-LCC-datagen-8_9-fb]
+13:58 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-LCC]
+13:58 [INFO ] 
+13:58 [INFO ] The preparation for the benchmark succeed (if needed).
+13:58 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:00 [INFO ] The execution process finished within 108 seconds.
+14:00 [INFO ] The validation process finished within 0 seconds.
+14:00 [INFO ] The benchmark results are retrieved.
+14:00 [WARN ] Terminating runner process forcibly.
+14:00 [WARN ] Terminating process 4329 focibly.
+14:00 [WARN ] Executing command "kill -9 4329"
+14:00 [ERROR] Failed to kill runner process.
+14:00 [INFO ] The benchmark run is sucessfully terminated.
+14:00 [INFO ] Benchmark r575649is succeed, T_l=1168.597s, T_m=107.404s, T_p=49.511s.
+14:00 [INFO ] ============= Benchmark r575649 [21/36] =============
+14:00 [INFO ] 
+14:00 [INFO ] 
+14:00 [INFO ] 
+14:00 [INFO ] ============= Benchmark r771152 [21/36] =============
+14:00 [INFO ] Benchmark specification: [BenchmarkRun [r771152, BFS[src=6], datagen-8_9-fb, timeout=3600s]]
+14:00 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:00 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r771152-BFS-datagen-8_9-fb]
+14:00 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+14:00 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e]
+14:00 [INFO ] Output directory: [./output/r771152-BFS-datagen-8_9-fb]
+14:00 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-BFS]
+14:00 [INFO ] 
+14:00 [INFO ] The preparation for the benchmark succeed (if needed).
+14:00 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:01 [INFO ] The execution process finished within 50 seconds.
+14:01 [INFO ] The validation process finished within 0 seconds.
+14:01 [INFO ] The benchmark results are retrieved.
+14:01 [WARN ] Terminating runner process forcibly.
+14:01 [WARN ] Terminating process 4415 focibly.
+14:01 [WARN ] Executing command "kill -9 4415"
+14:01 [ERROR] Failed to kill runner process.
+14:01 [INFO ] The benchmark run is sucessfully terminated.
+14:01 [INFO ] Benchmark r771152is succeed, T_l=1168.597s, T_m=49.644s, T_p=0.533s.
+14:01 [INFO ] ============= Benchmark r771152 [22/36] =============
+14:01 [INFO ] 
+14:01 [INFO ] 
+14:01 [INFO ] 
+14:01 [INFO ] ============= Benchmark r813951 [22/36] =============
+14:01 [INFO ] Benchmark specification: [BenchmarkRun [r813951, CDLP[iter=10], datagen-8_9-fb, timeout=3600s]]
+14:01 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:01 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r813951-CDLP-datagen-8_9-fb]
+14:01 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+14:01 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e]
+14:01 [INFO ] Output directory: [./output/r813951-CDLP-datagen-8_9-fb]
+14:01 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-CDLP]
+14:01 [INFO ] 
+14:01 [INFO ] The preparation for the benchmark succeed (if needed).
+14:01 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:03 [INFO ] The execution process finished within 86 seconds.
+14:03 [INFO ] The validation process finished within 0 seconds.
+14:03 [INFO ] The benchmark results are retrieved.
+14:03 [WARN ] Terminating runner process forcibly.
+14:03 [WARN ] Terminating process 4501 focibly.
+14:03 [WARN ] Executing command "kill -9 4501"
+14:03 [ERROR] Failed to kill runner process.
+14:03 [INFO ] The benchmark run is sucessfully terminated.
+14:03 [INFO ] Benchmark r813951is succeed, T_l=1168.597s, T_m=85.198s, T_p=33.759s.
+14:03 [INFO ] ============= Benchmark r813951 [23/36] =============
+14:03 [INFO ] 
+14:03 [INFO ] 
+14:03 [INFO ] 
+14:03 [INFO ] ============= Benchmark r489083 [23/36] =============
+14:03 [INFO ] Benchmark specification: [BenchmarkRun [r489083, WCC[none], datagen-8_9-fb, timeout=3600s]]
+14:03 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:03 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r489083-WCC-datagen-8_9-fb]
+14:03 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+14:03 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-8_9-fb.e]
+14:03 [INFO ] Output directory: [./output/r489083-WCC-datagen-8_9-fb]
+14:03 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-WCC]
+14:03 [INFO ] 
+14:03 [INFO ] The preparation for the benchmark succeed (if needed).
+14:03 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:04 [INFO ] The execution process finished within 52 seconds.
+14:04 [INFO ] The validation process finished within 0 seconds.
+14:04 [INFO ] The benchmark results are retrieved.
+14:04 [WARN ] Terminating runner process forcibly.
+14:04 [WARN ] Terminating process 4593 focibly.
+14:04 [WARN ] Executing command "kill -9 4593"
+14:04 [ERROR] Failed to kill runner process.
+14:04 [INFO ] The benchmark run is sucessfully terminated.
+14:04 [INFO ] Benchmark r489083is succeed, T_l=1168.597s, T_m=51.907s, T_p=2.252s.
+14:04 [INFO ] ============= Benchmark r489083 [24/36] =============
+14:04 [INFO ] 
+14:04 [INFO ] 
+14:04 [INFO ] Deleting graph "datagen-8_9-fb:datagen-8_9-fb".
+14:04 [INFO ] ----------------- Deleting graph ""datagen-8_9-fb:datagen-8_9-fb"" -----------------
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx1'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx2'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx3'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx4'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx5'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx6'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx7'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx8'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx9'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx10'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx11'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx12'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx13'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx14'
+14:04 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.mtx15'
+14:04 [INFO ] ----------------- Deleted graph ""datagen-8_9-fb:datagen-8_9-fb"" -----------------
+14:04 [INFO ] 
+14:04 [INFO ] 
+14:04 [INFO ] Preprocessing graph "datagen-8_9-fb:datagen-8_9-fb.e_weight" for 1 benchmark run(s).
+14:04 [INFO ] Formatting (Minimizing) graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight""
+14:04 [INFO ] Found vertex file for graph "datagen-8_9-fb" at "/home/hduser/graphalytics-datasets/datagen-8_9-fb.v".
+14:04 [INFO ] Found edge file for graph "datagen-8_9-fb.e_weight" at "/home/hduser/graphalytics-datasets/datagen-8_9-fb.e".
+14:04 [INFO ] Formatted (Minimizing) graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight""
+14:04 [INFO ] ----------------- Loading graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight"" -----------------
+14:04 [INFO ] Preprocessing graph "datagen-8_9-fb.e_weight": generating intermediate mtx format.
+14:19 [INFO ] Stored vertex translation in: intermediate/datagen-8_9-fb.e_weight_vertex_translation.bin
+14:19 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/datagen-8_9-fb.e_weight.txt intermediate/datagen-8_9-fb.e_weight.mtx 
+14:34 [INFO ] ----------------- Loaded graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight"" -----------------
+14:34 [INFO ] The loading process finished within 1819 seconds
+14:34 [INFO ] 
+14:34 [INFO ] 
+14:34 [INFO ] ============= Benchmark r919579 [24/36] =============
+14:34 [INFO ] Benchmark specification: [BenchmarkRun [r919579, SSSP[src=6, prop=weight], datagen-8_9-fb, timeout=3600s]]
+14:34 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:34 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r919579-SSSP-datagen-8_9-fb]
+14:34 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.v]
+14:34 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/datagen-8_9-fb.e]
+14:34 [INFO ] Output directory: [./output/r919579-SSSP-datagen-8_9-fb]
+14:34 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-8_9-fb-SSSP]
+14:34 [INFO ] 
+14:34 [INFO ] The preparation for the benchmark succeed (if needed).
+14:35 [INFO ] The benchmark runner becomes ready within 14 seconds.
+14:36 [INFO ] The execution process finished within 59 seconds.
+14:36 [INFO ] The validation process finished within 0 seconds.
+14:36 [INFO ] The benchmark results are retrieved.
+14:36 [WARN ] Terminating runner process forcibly.
+14:36 [WARN ] Terminating process 4887 focibly.
+14:36 [WARN ] Executing command "kill -9 4887"
+14:36 [ERROR] Failed to kill runner process.
+14:36 [INFO ] The benchmark run is sucessfully terminated.
+14:36 [INFO ] Benchmark r919579is succeed, T_l=1819.985s, T_m=58.841s, T_p=0.639s.
+14:36 [INFO ] ============= Benchmark r919579 [25/36] =============
+14:36 [INFO ] 
+14:36 [INFO ] 
+14:36 [INFO ] Deleting graph "datagen-8_9-fb:datagen-8_9-fb.e_weight".
+14:36 [INFO ] ----------------- Deleting graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight"" -----------------
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx1'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx2'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx3'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx4'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx5'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx6'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx7'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx8'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx9'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx10'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx11'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx12'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx13'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx14'
+14:36 [WARN ] failed to delete intermediate file 'intermediate/datagen-8_9-fb.e_weight.mtx15'
+14:36 [INFO ] ----------------- Deleted graph ""datagen-8_9-fb:datagen-8_9-fb.e_weight"" -----------------
+14:36 [INFO ] 
+14:36 [INFO ] 
+14:36 [INFO ] Preparing graph "datagen-7_9-fb" with 2 different formats: [datagen-7_9-fb.e_weight, datagen-7_9-fb]
+14:36 [INFO ] 
+14:36 [INFO ] 
+14:36 [INFO ] Preprocessing graph "datagen-7_9-fb:datagen-7_9-fb" for 5 benchmark run(s).
+14:36 [INFO ] Formatting (Minimizing) graph ""datagen-7_9-fb:datagen-7_9-fb""
+14:36 [INFO ] Found vertex file for graph "datagen-7_9-fb" at "/home/hduser/graphalytics-datasets/datagen-7_9-fb.v".
+14:36 [INFO ] Generating edge file for graph "datagen-7_9-fb" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e" with edge properties PropertyList{properties=[]}.
+14:37 [INFO ] Done generating edge file for graph "datagen-7_9-fb".
+14:37 [INFO ] Formatted (Minimizing) graph ""datagen-7_9-fb:datagen-7_9-fb""
+14:37 [INFO ] ----------------- Loading graph ""datagen-7_9-fb:datagen-7_9-fb"" -----------------
+14:37 [INFO ] Preprocessing graph "datagen-7_9-fb": generating intermediate mtx format.
+14:38 [INFO ] Stored vertex translation in: intermediate/datagen-7_9-fb_vertex_translation.bin
+14:38 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/datagen-7_9-fb.txt intermediate/datagen-7_9-fb.mtx 
+14:39 [INFO ] ----------------- Loaded graph ""datagen-7_9-fb:datagen-7_9-fb"" -----------------
+14:39 [INFO ] The loading process finished within 113 seconds
+14:39 [INFO ] 
+14:39 [INFO ] 
+14:39 [INFO ] ============= Benchmark r604861 [25/36] =============
+14:39 [INFO ] Benchmark specification: [BenchmarkRun [r604861, LCC[none], datagen-7_9-fb, timeout=3600s]]
+14:39 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:39 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r604861-LCC-datagen-7_9-fb]
+14:39 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:39 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e]
+14:39 [INFO ] Output directory: [./output/r604861-LCC-datagen-7_9-fb]
+14:39 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-LCC]
+14:39 [INFO ] 
+14:39 [INFO ] The preparation for the benchmark succeed (if needed).
+14:39 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:39 [INFO ] The execution process finished within 13 seconds.
+14:39 [INFO ] The validation process finished within 0 seconds.
+14:39 [INFO ] The benchmark results are retrieved.
+14:39 [WARN ] Terminating runner process forcibly.
+14:39 [WARN ] Terminating process 5013 focibly.
+14:39 [WARN ] Executing command "kill -9 5013"
+14:39 [ERROR] Failed to kill runner process.
+14:39 [INFO ] The benchmark run is sucessfully terminated.
+14:39 [INFO ] Benchmark r604861is succeed, T_l=113.881s, T_m=12.566s, T_p=4.297s.
+14:39 [INFO ] ============= Benchmark r604861 [26/36] =============
+14:39 [INFO ] 
+14:39 [INFO ] 
+14:39 [INFO ] 
+14:39 [INFO ] ============= Benchmark r786790 [26/36] =============
+14:39 [INFO ] Benchmark specification: [BenchmarkRun [r786790, BFS[src=6], datagen-7_9-fb, timeout=3600s]]
+14:39 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:39 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r786790-BFS-datagen-7_9-fb]
+14:39 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:39 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e]
+14:39 [INFO ] Output directory: [./output/r786790-BFS-datagen-7_9-fb]
+14:39 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-BFS]
+14:39 [INFO ] 
+14:39 [INFO ] The preparation for the benchmark succeed (if needed).
+14:39 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:39 [INFO ] The execution process finished within 8 seconds.
+14:39 [INFO ] The validation process finished within 0 seconds.
+14:39 [INFO ] The benchmark results are retrieved.
+14:39 [WARN ] Terminating runner process forcibly.
+14:39 [WARN ] Terminating process 5099 focibly.
+14:39 [WARN ] Executing command "kill -9 5099"
+14:39 [ERROR] Failed to kill runner process.
+14:40 [INFO ] The benchmark run is sucessfully terminated.
+14:40 [INFO ] Benchmark r786790is succeed, T_l=113.881s, T_m=7.334s, T_p=0.094s.
+14:40 [INFO ] ============= Benchmark r786790 [27/36] =============
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] ============= Benchmark r773002 [27/36] =============
+14:40 [INFO ] Benchmark specification: [BenchmarkRun [r773002, CDLP[iter=10], datagen-7_9-fb, timeout=3600s]]
+14:40 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:40 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r773002-CDLP-datagen-7_9-fb]
+14:40 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:40 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e]
+14:40 [INFO ] Output directory: [./output/r773002-CDLP-datagen-7_9-fb]
+14:40 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-CDLP]
+14:40 [INFO ] 
+14:40 [INFO ] The preparation for the benchmark succeed (if needed).
+14:40 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:40 [INFO ] The execution process finished within 12 seconds.
+14:40 [INFO ] The validation process finished within 1 seconds.
+14:40 [INFO ] The benchmark results are retrieved.
+14:40 [WARN ] Terminating runner process forcibly.
+14:40 [WARN ] Terminating process 5178 focibly.
+14:40 [WARN ] Executing command "kill -9 5178"
+14:40 [ERROR] Failed to kill runner process.
+14:40 [INFO ] The benchmark run is sucessfully terminated.
+14:40 [INFO ] Benchmark r773002is succeed, T_l=113.881s, T_m=11.940s, T_p=4.281s.
+14:40 [INFO ] ============= Benchmark r773002 [28/36] =============
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] ============= Benchmark r640938 [28/36] =============
+14:40 [INFO ] Benchmark specification: [BenchmarkRun [r640938, WCC[none], datagen-7_9-fb, timeout=3600s]]
+14:40 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:40 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r640938-WCC-datagen-7_9-fb]
+14:40 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:40 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e]
+14:40 [INFO ] Output directory: [./output/r640938-WCC-datagen-7_9-fb]
+14:40 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-WCC]
+14:40 [INFO ] 
+14:40 [INFO ] The preparation for the benchmark succeed (if needed).
+14:40 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:40 [INFO ] The execution process finished within 8 seconds.
+14:40 [INFO ] The validation process finished within 0 seconds.
+14:40 [INFO ] The benchmark results are retrieved.
+14:40 [WARN ] Terminating runner process forcibly.
+14:40 [WARN ] Terminating process 5257 focibly.
+14:40 [WARN ] Executing command "kill -9 5257"
+14:40 [ERROR] Failed to kill runner process.
+14:40 [INFO ] The benchmark run is sucessfully terminated.
+14:40 [INFO ] Benchmark r640938is succeed, T_l=113.881s, T_m=7.532s, T_p=0.367s.
+14:40 [INFO ] ============= Benchmark r640938 [29/36] =============
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] 
+14:40 [INFO ] ============= Benchmark r500976 [29/36] =============
+14:40 [INFO ] Benchmark specification: [BenchmarkRun [r500976, PR[damp=0.85, iter=10], datagen-7_9-fb, timeout=3600s]]
+14:40 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:40 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r500976-PR-datagen-7_9-fb]
+14:40 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:40 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/datagen-7_9-fb.e]
+14:40 [INFO ] Output directory: [./output/r500976-PR-datagen-7_9-fb]
+14:40 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-PR]
+14:40 [INFO ] 
+14:40 [INFO ] The preparation for the benchmark succeed (if needed).
+14:40 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:40 [INFO ] The execution process finished within 9 seconds.
+14:40 [INFO ] The validation process finished within 0 seconds.
+14:40 [INFO ] The benchmark results are retrieved.
+14:40 [WARN ] Terminating runner process forcibly.
+14:40 [WARN ] Terminating process 5341 focibly.
+14:40 [WARN ] Executing command "kill -9 5341"
+14:40 [ERROR] Failed to kill runner process.
+14:41 [INFO ] The benchmark run is sucessfully terminated.
+14:41 [INFO ] Benchmark r500976is succeed, T_l=113.881s, T_m=8.730s, T_p=0.443s.
+14:41 [INFO ] ============= Benchmark r500976 [30/36] =============
+14:41 [INFO ] 
+14:41 [INFO ] 
+14:41 [INFO ] Deleting graph "datagen-7_9-fb:datagen-7_9-fb".
+14:41 [INFO ] ----------------- Deleting graph ""datagen-7_9-fb:datagen-7_9-fb"" -----------------
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx1'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx2'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx3'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx4'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx5'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx6'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx7'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx8'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx9'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx10'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx11'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx12'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx13'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx14'
+14:41 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.mtx15'
+14:41 [INFO ] ----------------- Deleted graph ""datagen-7_9-fb:datagen-7_9-fb"" -----------------
+14:41 [INFO ] 
+14:41 [INFO ] 
+14:41 [INFO ] Preprocessing graph "datagen-7_9-fb:datagen-7_9-fb.e_weight" for 1 benchmark run(s).
+14:41 [INFO ] Formatting (Minimizing) graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight""
+14:41 [INFO ] Found vertex file for graph "datagen-7_9-fb" at "/home/hduser/graphalytics-datasets/datagen-7_9-fb.v".
+14:41 [INFO ] Found edge file for graph "datagen-7_9-fb.e_weight" at "/home/hduser/graphalytics-datasets/datagen-7_9-fb.e".
+14:41 [INFO ] Formatted (Minimizing) graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight""
+14:41 [INFO ] ----------------- Loading graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight"" -----------------
+14:41 [INFO ] Preprocessing graph "datagen-7_9-fb.e_weight": generating intermediate mtx format.
+14:42 [INFO ] Stored vertex translation in: intermediate/datagen-7_9-fb.e_weight_vertex_translation.bin
+14:42 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/datagen-7_9-fb.e_weight.txt intermediate/datagen-7_9-fb.e_weight.mtx 
+14:43 [INFO ] ----------------- Loaded graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight"" -----------------
+14:43 [INFO ] The loading process finished within 163 seconds
+14:43 [INFO ] 
+14:43 [INFO ] 
+14:43 [INFO ] ============= Benchmark r568729 [30/36] =============
+14:43 [INFO ] Benchmark specification: [BenchmarkRun [r568729, SSSP[src=6, prop=weight], datagen-7_9-fb, timeout=3600s]]
+14:43 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:43 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r568729-SSSP-datagen-7_9-fb]
+14:43 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.v]
+14:43 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/datagen-7_9-fb.e]
+14:43 [INFO ] Output directory: [./output/r568729-SSSP-datagen-7_9-fb]
+14:43 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/datagen-7_9-fb-SSSP]
+14:43 [INFO ] 
+14:43 [INFO ] The preparation for the benchmark succeed (if needed).
+14:43 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:44 [INFO ] The execution process finished within 9 seconds.
+14:44 [INFO ] The validation process finished within 0 seconds.
+14:44 [INFO ] The benchmark results are retrieved.
+14:44 [WARN ] Terminating runner process forcibly.
+14:44 [WARN ] Terminating process 5458 focibly.
+14:44 [WARN ] Executing command "kill -9 5458"
+14:44 [ERROR] Failed to kill runner process.
+14:44 [INFO ] The benchmark run is sucessfully terminated.
+14:44 [INFO ] Benchmark r568729is succeed, T_l=163.785s, T_m=8.019s, T_p=0.090s.
+14:44 [INFO ] ============= Benchmark r568729 [31/36] =============
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] Deleting graph "datagen-7_9-fb:datagen-7_9-fb.e_weight".
+14:44 [INFO ] ----------------- Deleting graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight"" -----------------
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx1'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx2'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx3'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx4'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx5'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx6'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx7'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx8'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx9'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx10'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx11'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx12'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx13'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx14'
+14:44 [WARN ] failed to delete intermediate file 'intermediate/datagen-7_9-fb.e_weight.mtx15'
+14:44 [INFO ] ----------------- Deleted graph ""datagen-7_9-fb:datagen-7_9-fb.e_weight"" -----------------
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] Preparing graph "example-undirected" with 2 different formats: [example-undirected.e_weight, example-undirected]
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] Preprocessing graph "example-undirected:example-undirected" for 5 benchmark run(s).
+14:44 [INFO ] Formatting (Minimizing) graph ""example-undirected:example-undirected""
+14:44 [INFO ] Found vertex file for graph "example-undirected" at "/home/hduser/graphalytics-datasets/example-undirected.v".
+14:44 [INFO ] Generating edge file for graph "example-undirected" at "/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e" with edge properties PropertyList{properties=[]}.
+14:44 [INFO ] Done generating edge file for graph "example-undirected".
+14:44 [INFO ] Formatted (Minimizing) graph ""example-undirected:example-undirected""
+14:44 [INFO ] ----------------- Loading graph ""example-undirected:example-undirected"" -----------------
+14:44 [INFO ] Preprocessing graph "example-undirected": generating intermediate mtx format.
+14:44 [INFO ] Stored vertex translation in: intermediate/example-undirected_vertex_translation.bin
+14:44 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=0 --outputedgeweights=2 --edgeweighttype=0 intermediate/example-undirected.txt intermediate/example-undirected.mtx 
+14:44 [INFO ] ----------------- Loaded graph ""example-undirected:example-undirected"" -----------------
+14:44 [INFO ] The loading process finished within 1 seconds
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] ============= Benchmark r603080 [31/36] =============
+14:44 [INFO ] Benchmark specification: [BenchmarkRun [r603080, LCC[none], example-undirected, timeout=3600s]]
+14:44 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:44 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r603080-LCC-example-undirected]
+14:44 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:44 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e]
+14:44 [INFO ] Output directory: [./output/r603080-LCC-example-undirected]
+14:44 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-LCC]
+14:44 [INFO ] 
+14:44 [INFO ] The preparation for the benchmark succeed (if needed).
+14:44 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:44 [INFO ] The execution process finished within 2 seconds.
+14:44 [INFO ] The validation process finished within 0 seconds.
+14:44 [INFO ] The benchmark results are retrieved.
+14:44 [WARN ] Terminating runner process forcibly.
+14:44 [WARN ] Terminating process 5567 focibly.
+14:44 [WARN ] Executing command "kill -9 5567"
+14:44 [ERROR] Failed to kill runner process.
+14:44 [INFO ] The benchmark run is sucessfully terminated.
+14:44 [INFO ] Benchmark r603080is succeed, T_l=1.377s, T_m=1.437s, T_p=0.046s.
+14:44 [INFO ] ============= Benchmark r603080 [32/36] =============
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] ============= Benchmark r700889 [32/36] =============
+14:44 [INFO ] Benchmark specification: [BenchmarkRun [r700889, BFS[src=2], example-undirected, timeout=3600s]]
+14:44 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:44 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r700889-BFS-example-undirected]
+14:44 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:44 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e]
+14:44 [INFO ] Output directory: [./output/r700889-BFS-example-undirected]
+14:44 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-BFS]
+14:44 [INFO ] 
+14:44 [INFO ] The preparation for the benchmark succeed (if needed).
+14:44 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:44 [INFO ] The execution process finished within 2 seconds.
+14:44 [INFO ] The validation process finished within 0 seconds.
+14:44 [INFO ] The benchmark results are retrieved.
+14:44 [WARN ] Terminating runner process forcibly.
+14:44 [WARN ] Terminating process 5646 focibly.
+14:44 [WARN ] Executing command "kill -9 5646"
+14:44 [ERROR] Failed to kill runner process.
+14:44 [INFO ] The benchmark run is sucessfully terminated.
+14:44 [INFO ] Benchmark r700889is succeed, T_l=1.377s, T_m=1.441s, T_p=0.038s.
+14:44 [INFO ] ============= Benchmark r700889 [33/36] =============
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] ============= Benchmark r772774 [33/36] =============
+14:44 [INFO ] Benchmark specification: [BenchmarkRun [r772774, CDLP[iter=2], example-undirected, timeout=3600s]]
+14:44 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:44 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r772774-CDLP-example-undirected]
+14:44 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:44 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e]
+14:44 [INFO ] Output directory: [./output/r772774-CDLP-example-undirected]
+14:44 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-CDLP]
+14:44 [INFO ] 
+14:44 [INFO ] The preparation for the benchmark succeed (if needed).
+14:44 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:44 [INFO ] The execution process finished within 2 seconds.
+14:44 [INFO ] The validation process finished within 0 seconds.
+14:44 [INFO ] The benchmark results are retrieved.
+14:44 [WARN ] Terminating runner process forcibly.
+14:44 [WARN ] Terminating process 5725 focibly.
+14:44 [WARN ] Executing command "kill -9 5725"
+14:44 [ERROR] Failed to kill runner process.
+14:44 [INFO ] The benchmark run is sucessfully terminated.
+14:44 [INFO ] Benchmark r772774is succeed, T_l=1.377s, T_m=1.424s, T_p=0.044s.
+14:44 [INFO ] ============= Benchmark r772774 [34/36] =============
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] 
+14:44 [INFO ] ============= Benchmark r470371 [34/36] =============
+14:44 [INFO ] Benchmark specification: [BenchmarkRun [r470371, PR[damp=0.85, iter=2], example-undirected, timeout=3600s]]
+14:44 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:44 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r470371-PR-example-undirected]
+14:44 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:44 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e]
+14:44 [INFO ] Output directory: [./output/r470371-PR-example-undirected]
+14:44 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-PR]
+14:44 [INFO ] 
+14:44 [INFO ] The preparation for the benchmark succeed (if needed).
+14:44 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:45 [INFO ] The execution process finished within 2 seconds.
+14:45 [INFO ] The validation process finished within 0 seconds.
+14:45 [INFO ] The benchmark results are retrieved.
+14:45 [WARN ] Terminating runner process forcibly.
+14:45 [WARN ] Terminating process 5805 focibly.
+14:45 [WARN ] Executing command "kill -9 5805"
+14:45 [ERROR] Failed to kill runner process.
+14:45 [INFO ] The benchmark run is sucessfully terminated.
+14:45 [INFO ] Benchmark r470371is succeed, T_l=1.377s, T_m=1.404s, T_p=0.037s.
+14:45 [INFO ] ============= Benchmark r470371 [35/36] =============
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] ============= Benchmark r711444 [35/36] =============
+14:45 [INFO ] Benchmark specification: [BenchmarkRun [r711444, WCC[none], example-undirected, timeout=3600s]]
+14:45 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:45 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r711444-WCC-example-undirected]
+14:45 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:45 [INFO ] Input file (edge): [/home/hduser/graphalytics-platforms-graphmat/graphalytics-1.0.0-graphmat-0.2-SNAPSHOT/cache/example-undirected.e]
+14:45 [INFO ] Output directory: [./output/r711444-WCC-example-undirected]
+14:45 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-WCC]
+14:45 [INFO ] 
+14:45 [INFO ] The preparation for the benchmark succeed (if needed).
+14:45 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:45 [INFO ] The execution process finished within 2 seconds.
+14:45 [INFO ] The validation process finished within 0 seconds.
+14:45 [INFO ] The benchmark results are retrieved.
+14:45 [WARN ] Terminating runner process forcibly.
+14:45 [WARN ] Terminating process 5884 focibly.
+14:45 [WARN ] Executing command "kill -9 5884"
+14:45 [ERROR] Failed to kill runner process.
+14:45 [INFO ] The benchmark run is sucessfully terminated.
+14:45 [INFO ] Benchmark r711444is succeed, T_l=1.377s, T_m=1.426s, T_p=0.052s.
+14:45 [INFO ] ============= Benchmark r711444 [36/36] =============
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] Deleting graph "example-undirected:example-undirected".
+14:45 [INFO ] ----------------- Deleting graph ""example-undirected:example-undirected"" -----------------
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx1'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx2'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx3'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx4'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx5'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx6'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx7'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx8'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx9'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx10'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx11'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx12'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx13'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx14'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.mtx15'
+14:45 [INFO ] ----------------- Deleted graph ""example-undirected:example-undirected"" -----------------
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] Preprocessing graph "example-undirected:example-undirected.e_weight" for 1 benchmark run(s).
+14:45 [INFO ] Formatting (Minimizing) graph ""example-undirected:example-undirected.e_weight""
+14:45 [INFO ] Found vertex file for graph "example-undirected" at "/home/hduser/graphalytics-datasets/example-undirected.v".
+14:45 [INFO ] Found edge file for graph "example-undirected.e_weight" at "/home/hduser/graphalytics-datasets/example-undirected.e".
+14:45 [INFO ] Formatted (Minimizing) graph ""example-undirected:example-undirected.e_weight""
+14:45 [INFO ] ----------------- Loading graph ""example-undirected:example-undirected.e_weight"" -----------------
+14:45 [INFO ] Preprocessing graph "example-undirected.e_weight": generating intermediate mtx format.
+14:45 [INFO ] Stored vertex translation in: intermediate/example-undirected.e_weight_vertex_translation.bin
+14:45 [INFO ] running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/graph_convert --selfloops=0 --duplicatededges=0 --bidirectional --inputformat=1 --outputformat=2 --inputheader=0 --outputheader=1 --inputedgeweights=1 --outputedgeweights=1 --edgeweighttype=1 intermediate/example-undirected.e_weight.txt intermediate/example-undirected.e_weight.mtx 
+14:45 [INFO ] ----------------- Loaded graph ""example-undirected:example-undirected.e_weight"" -----------------
+14:45 [INFO ] The loading process finished within 1 seconds
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] ============= Benchmark r703209 [36/36] =============
+14:45 [INFO ] Benchmark specification: [BenchmarkRun [r703209, SSSP[src=2, prop=weight], example-undirected, timeout=3600s]]
+14:45 [INFO ] Benchmark configuration: [output=enabled, validation=disabled]
+14:45 [INFO ] Log directory: [report/180817-125735-GRAPHMAT-report-CUSTOM/log/r703209-SSSP-example-undirected]
+14:45 [INFO ] Input file (vertex): [/home/hduser/graphalytics-datasets/example-undirected.v]
+14:45 [INFO ] Input file (edge): [/home/hduser/graphalytics-datasets/example-undirected.e]
+14:45 [INFO ] Output directory: [./output/r703209-SSSP-example-undirected]
+14:45 [INFO ] Validation directory: [/home/hduser/graphalytics-datasets/example-undirected-SSSP]
+14:45 [INFO ] 
+14:45 [INFO ] The preparation for the benchmark succeed (if needed).
+14:45 [INFO ] The benchmark runner becomes ready within 2 seconds.
+14:45 [INFO ] The execution process finished within 2 seconds.
+14:45 [INFO ] The validation process finished within 0 seconds.
+14:45 [INFO ] The benchmark results are retrieved.
+14:45 [WARN ] Terminating runner process forcibly.
+14:45 [WARN ] Terminating process 5992 focibly.
+14:45 [WARN ] Executing command "kill -9 5992"
+14:45 [ERROR] Failed to kill runner process.
+14:45 [INFO ] The benchmark run is sucessfully terminated.
+14:45 [INFO ] Benchmark r703209is succeed, T_l=1.386s, T_m=1.435s, T_p=0.039s.
+14:45 [INFO ] ============= Benchmark r703209 [37/36] =============
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] Deleting graph "example-undirected:example-undirected.e_weight".
+14:45 [INFO ] ----------------- Deleting graph ""example-undirected:example-undirected.e_weight"" -----------------
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx1'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx2'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx3'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx4'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx5'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx6'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx7'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx8'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx9'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx10'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx11'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx12'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx13'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx14'
+14:45 [WARN ] failed to delete intermediate file 'intermediate/example-undirected.e_weight.mtx15'
+14:45 [INFO ] ----------------- Deleted graph ""example-undirected:example-undirected.e_weight"" -----------------
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] Reporting benchmark summary:
+14:45 [INFO ] [BenchmarkRun [r711444, WCC[none], example-undirected, timeout=3600s]] => succeed, T_l=1.377s, T_m=1.426s, T_p=0.052s.
+14:45 [INFO ] [BenchmarkRun [r761644, WCC[none], example-directed, timeout=3600s]] => succeed, T_l=1.402s, T_m=1.508s, T_p=0.038s.
+14:45 [INFO ] [BenchmarkRun [r658444, WCC[none], dota-league, timeout=3600s]] => succeed, T_l=51.944s, T_m=2.419s, T_p=0.187s.
+14:45 [INFO ] [BenchmarkRun [r489083, WCC[none], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1168.597s, T_m=51.907s, T_p=2.252s.
+14:45 [INFO ] [BenchmarkRun [r808888, WCC[none], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=360.069s, T_m=18.450s, T_p=0.744s.
+14:45 [INFO ] [BenchmarkRun [r640938, WCC[none], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=113.881s, T_m=7.532s, T_p=0.367s.
+14:45 [INFO ] [BenchmarkRun [r703209, SSSP[src=2, prop=weight], example-undirected, timeout=3600s]] => succeed, T_l=1.386s, T_m=1.435s, T_p=0.039s.
+14:45 [INFO ] [BenchmarkRun [r755973, SSSP[src=1, prop=weight], example-directed, timeout=3600s]] => succeed, T_l=6.159s, T_m=1.461s, T_p=0.020s.
+14:45 [INFO ] [BenchmarkRun [r488604, SSSP[src=287770, prop=weight], dota-league, timeout=3600s]] => succeed, T_l=81.838s, T_m=2.465s, T_p=0.155s.
+14:45 [INFO ] [BenchmarkRun [r919579, SSSP[src=6, prop=weight], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1819.985s, T_m=58.841s, T_p=0.639s.
+14:45 [INFO ] [BenchmarkRun [r485181, SSSP[src=6, prop=weight], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=521.506s, T_m=20.347s, T_p=0.231s.
+14:45 [INFO ] [BenchmarkRun [r568729, SSSP[src=6, prop=weight], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=163.785s, T_m=8.019s, T_p=0.090s.
+14:45 [INFO ] [BenchmarkRun [r603080, LCC[none], example-undirected, timeout=3600s]] => succeed, T_l=1.377s, T_m=1.437s, T_p=0.046s.
+14:45 [INFO ] [BenchmarkRun [r517723, LCC[none], example-directed, timeout=3600s]] => succeed, T_l=1.402s, T_m=1.525s, T_p=0.081s.
+14:45 [INFO ] [BenchmarkRun [r551627, LCC[none], dota-league, timeout=3600s]] => succeed, T_l=51.944s, T_m=28.825s, T_p=26.517s.
+14:45 [INFO ] [BenchmarkRun [r575649, LCC[none], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1168.597s, T_m=107.404s, T_p=49.511s.
+14:45 [INFO ] [BenchmarkRun [r647311, LCC[none], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=360.069s, T_m=35.543s, T_p=14.228s.
+14:45 [INFO ] [BenchmarkRun [r604861, LCC[none], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=113.881s, T_m=12.566s, T_p=4.297s.
+14:45 [INFO ] [BenchmarkRun [r700889, BFS[src=2], example-undirected, timeout=3600s]] => succeed, T_l=1.377s, T_m=1.441s, T_p=0.038s.
+14:45 [INFO ] [BenchmarkRun [r709841, BFS[src=1], example-directed, timeout=3600s]] => succeed, T_l=1.402s, T_m=1.502s, T_p=0.033s.
+14:45 [INFO ] [BenchmarkRun [r738819, BFS[src=287770], dota-league, timeout=3600s]] => succeed, T_l=51.944s, T_m=2.303s, T_p=0.049s.
+14:45 [INFO ] [BenchmarkRun [r771152, BFS[src=6], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1168.597s, T_m=49.644s, T_p=0.533s.
+14:45 [INFO ] [BenchmarkRun [r901913, BFS[src=6], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=360.069s, T_m=17.739s, T_p=0.208s.
+14:45 [INFO ] [BenchmarkRun [r786790, BFS[src=6], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=113.881s, T_m=7.334s, T_p=0.094s.
+14:45 [INFO ] [BenchmarkRun [r470371, PR[damp=0.85, iter=2], example-undirected, timeout=3600s]] => succeed, T_l=1.377s, T_m=1.404s, T_p=0.037s.
+14:45 [INFO ] [BenchmarkRun [r585397, PR[damp=0.85, iter=2], example-directed, timeout=3600s]] => succeed, T_l=1.402s, T_m=1.477s, T_p=0.039s.
+14:45 [INFO ] [BenchmarkRun [r630811, PR[damp=0.85, iter=10], dota-league, timeout=3600s]] => succeed, T_l=51.944s, T_m=2.733s, T_p=0.324s.
+14:45 [INFO ] [BenchmarkRun [r794507, PR[damp=0.85, iter=10], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1168.597s, T_m=59.560s, T_p=2.595s.
+14:45 [INFO ] [BenchmarkRun [r613261, PR[damp=0.85, iter=10], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=360.069s, T_m=21.302s, T_p=0.945s.
+14:45 [INFO ] [BenchmarkRun [r500976, PR[damp=0.85, iter=10], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=113.881s, T_m=8.730s, T_p=0.443s.
+14:45 [INFO ] [BenchmarkRun [r772774, CDLP[iter=2], example-undirected, timeout=3600s]] => succeed, T_l=1.377s, T_m=1.424s, T_p=0.044s.
+14:45 [INFO ] [BenchmarkRun [r552385, CDLP[iter=2], example-directed, timeout=3600s]] => succeed, T_l=1.402s, T_m=1.484s, T_p=0.060s.
+14:45 [INFO ] [BenchmarkRun [r744733, CDLP[iter=10], dota-league, timeout=3600s]] => succeed, T_l=51.944s, T_m=4.822s, T_p=2.493s.
+14:45 [INFO ] [BenchmarkRun [r813951, CDLP[iter=10], datagen-8_9-fb, timeout=3600s]] => succeed, T_l=1168.597s, T_m=85.198s, T_p=33.759s.
+14:45 [INFO ] [BenchmarkRun [r898666, CDLP[iter=10], datagen-8_4-fb, timeout=3600s]] => succeed, T_l=360.069s, T_m=29.936s, T_p=10.766s.
+14:45 [INFO ] [BenchmarkRun [r773002, CDLP[iter=10], datagen-7_9-fb, timeout=3600s]] => succeed, T_l=113.881s, T_m=11.940s, T_p=4.281s.
+14:45 [INFO ] In total, [36 / 36] benchmark(s) succeed.
+14:45 [INFO ] Wrote benchmark report of type "html" to "report/180817-125735-GRAPHMAT-report-CUSTOM".
+14:45 [INFO ] 
+14:45 [INFO ] Benchmark ended: 2018/August/17 14:45:40 UTC.
+14:45 [INFO ] 
+14:45 [INFO ] 
+14:45 [INFO ] ##################################################################################
+14:45 [INFO ] ##################################################################################
+14:45 [INFO ] ##                                                                              ##
+14:45 [INFO ] ##                                                                              ##
+14:45 [INFO ] ##                 Graphalytics benchmark for GRAPHMAT platform                 ##
+14:45 [INFO ] ##                                                                              ##
+14:45 [INFO ] ##                                                                              ##
+14:45 [INFO ] ##################################################################################
+14:45 [INFO ] ##################################################################################
+14:45 [INFO ] 
+14:45 [INFO ] Terminating Benchmark Suite.

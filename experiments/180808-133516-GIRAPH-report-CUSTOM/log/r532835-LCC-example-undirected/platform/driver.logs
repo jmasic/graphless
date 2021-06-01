@@ -1,0 +1,8 @@
+StartTime: 1533741892079
+Runner executing benchmark r532835.
+Executing algorithm "Local clustering coefficient" on graph "example-undirected".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r532835_LCC-example-undirected at hdfs.
+Report execution r532835 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r532835 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741922433

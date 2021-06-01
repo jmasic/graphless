@@ -1,0 +1,8 @@
+StartTime: 1533741830045
+Runner executing benchmark r751965.
+Executing algorithm "Community detection - label propagation" on graph "example-undirected".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r751965_CDLP-example-undirected at hdfs.
+Report execution r751965 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r751965 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741859049

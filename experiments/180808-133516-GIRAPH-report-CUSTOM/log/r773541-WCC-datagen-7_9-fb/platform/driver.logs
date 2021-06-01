@@ -1,0 +1,8 @@
+StartTime: 1533739403192
+Runner executing benchmark r773541.
+Executing algorithm "Connected components" on graph "datagen-7_9-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r773541_WCC-datagen-7_9-fb at hdfs.
+Report execution r773541 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r773541 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533739441887

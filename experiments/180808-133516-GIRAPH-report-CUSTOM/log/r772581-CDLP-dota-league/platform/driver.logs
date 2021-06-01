@@ -1,0 +1,8 @@
+StartTime: 1533736939125
+Runner executing benchmark r772581.
+Executing algorithm "Community detection - label propagation" on graph "dota-league".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r772581_CDLP-dota-league at hdfs.
+Report execution r772581 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r772581 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533736983347

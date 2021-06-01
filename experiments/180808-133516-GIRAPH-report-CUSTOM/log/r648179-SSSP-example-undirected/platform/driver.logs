@@ -1,0 +1,8 @@
+StartTime: 1533741955491
+Runner executing benchmark r648179.
+Executing algorithm "Single source shortest paths" on graph "example-undirected.e_weight".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r648179_SSSP-example-undirected.e_weight at hdfs.
+Report execution r648179 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r648179 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741985121

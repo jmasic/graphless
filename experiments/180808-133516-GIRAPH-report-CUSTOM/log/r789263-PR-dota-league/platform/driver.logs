@@ -1,0 +1,8 @@
+StartTime: 1533737016160
+Runner executing benchmark r789263.
+Executing algorithm "PageRank" on graph "dota-league".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r789263_PR-dota-league at hdfs.
+Report execution r789263 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r789263 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533737060803

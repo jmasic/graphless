@@ -1,0 +1,8 @@
+StartTime: 1533738425754
+Runner executing benchmark r808118.
+Executing algorithm "Community detection - label propagation" on graph "datagen-8_9-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r808118_CDLP-datagen-8_9-fb at hdfs.
+Report execution r808118 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r808118 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533738605652

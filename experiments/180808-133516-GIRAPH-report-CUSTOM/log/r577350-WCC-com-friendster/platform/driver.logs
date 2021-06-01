@@ -1,0 +1,8 @@
+StartTime: 1533740553042
+Runner executing benchmark r577350.
+Executing algorithm "Connected components" on graph "com-friendster".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r577350_WCC-com-friendster at hdfs.
+Report execution r577350 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r577350 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533740791318

@@ -1,0 +1,679 @@
+Runner executing benchmark r813951.
+format = env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH %s %s
+binaryName = ./bin/standard/cd
+argsString = intermediate/datagen-8_9-fb.mtx 10 r813951 0 intermediate/output.txt0 
+running command: env I_MPI_DEBUG=2 I_MPI_FABRICS_LIST=tmi,dapl,tcp I_MPI_TMI_PROVIDER=psm2,KMP_AFFINITY=scatter,OMP_NUM_THREADS=16 mpirun -np 16 --host 10.164.0.2,10.164.0.3,10.164.0.4,10.164.0.5,10.164.0.6,10.164.0.7,10.164.0.8,10.164.0.9,10.164.0.10,10.164.0.11,10.164.0.12,10.164.0.13,10.164.0.14,10.164.0.15,10.164.0.16,10.164.0.17 -x LD_LIBRARY_PATH ./bin/standard/cd intermediate/datagen-8_9-fb.mtx 10 r813951 0 intermediate/output.txt0 
+--------------------------------------------------------------------------
+[[26383,1],8]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: graphalytics-graphmat-slave8
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Reading file intermediate/datagen-8_9-fb.mtx0
+Got nnz: 6966104
+Reading file intermediate/datagen-8_9-fb.mtx2
+Got nnz: 6649297
+Reading file intermediate/datagen-8_9-fb.mtx4
+Reading file intermediate/datagen-8_9-fb.mtx8
+Got nnz: 6649297
+Reading file intermediate/datagen-8_9-fb.mtx1
+Reading file intermediate/datagen-8_9-fb.mtx10
+Reading file intermediate/datagen-8_9-fb.mtx12
+Got nnz: 6617153
+Reading file intermediate/datagen-8_9-fb.mtx5
+Got nnz: 6939188
+Got nnz: 6906648
+Got nnz: 6732782
+Got nnz: 6732782
+Reading file intermediate/datagen-8_9-fb.mtx6
+Reading file intermediate/datagen-8_9-fb.mtx3
+Reading file intermediate/datagen-8_9-fb.mtx9
+Got nnz: 6705694
+Got nnz: 6705694
+Reading file intermediate/datagen-8_9-fb.mtx14
+Got nnz: 6701868
+Got nnz: 6617153
+Reading file intermediate/datagen-8_9-fb.mtx13
+Got nnz: 6634088
+Reading file intermediate/datagen-8_9-fb.mtx11
+Reading file intermediate/datagen-8_9-fb.mtx7
+Got nnz: 6701868
+Got nnz: 6634088
+Reading file intermediate/datagen-8_9-fb.mtx15
+Got nnz: 6919372
+Got nnz: 6595995
+Got nnz: 6582255
+Got nnz: 6580384
+Got nnz: 6630321
+Got nnz: 6591084
+Got nnz: 6715481
+Got nnz: 6571887
+Got nnz: 6601711
+Got nnz: 6636630
+Got nnz: 6570975
+Got nnz: 6570845
+Got nnz: 6570867
+Got nnz: 6612856
+Got nnz: 6587865
+Got nnz: 6581837
+Got nnz: 6605762
+Got nnz: 6568505
+Got nnz: 6529228
+Got nnz: 6552226
+Got nnz: 6562520
+Got nnz: 6566356
+Got nnz: 6576615
+Got nnz: 6545759
+Got nnz: 6551591
+Got nnz: 6548710
+Got nnz: 6562144
+Got nnz: 6561338
+Got nnz: 6580553
+Got nnz: 6530252
+Got nnz: 6582064
+Got nnz: 6578753
+Got nnz: 6590203
+Got nnz: 6544076
+Got nnz: 6581948
+Got nnz: 6556245
+Got nnz: 6705686
+Got nnz: 6615220
+Got nnz: 6612026
+Got nnz: 6560808
+Got nnz: 6583674
+Got nnz: 6591907
+Got nnz: 6655812
+Got nnz: 6587095
+Got nnz: 6561715
+Got nnz: 6626581
+Got nnz: 6579473
+Got nnz: 6673044
+Got nnz: 6604127
+Got nnz: 6580384
+Got nnz: 6570867
+Got nnz: 6636630
+Got nnz: 6581837
+Got nnz: 6591084
+Got nnz: 6715481
+Got nnz: 6570845
+Got nnz: 6582255
+Got nnz: 6570975
+Got nnz: 6612856
+Got nnz: 6571887
+Got nnz: 6595995
+Got nnz: 6601711
+Got nnz: 6587865
+Got nnz: 6605762
+Got nnz: 6630321
+Got nnz: 6957942
+Got nnz: 6655294
+Got nnz: 6732394
+Got nnz: 6654149
+Got nnz: 6622265
+Got nnz: 6940420
+Got nnz: 6726918
+Got nnz: 6938842
+Got nnz: 6622265
+Got nnz: 6655294
+Got nnz: 6732192
+Got nnz: 6732394
+Got nnz: 6726918
+Got nnz: 6940214
+Got nnz: 6732192
+Got nnz: 6654149
+Got nnz: 6574388
+Got nnz: 6621051
+Got nnz: 6657171
+Got nnz: 6546428
+Got nnz: 6543214
+Got nnz: 6593816
+Got nnz: 6616672
+Got nnz: 6742382
+Got nnz: 6588911
+Got nnz: 6661705
+Got nnz: 6584067
+Got nnz: 6554521
+Got nnz: 6538832
+Got nnz: 6574656
+Got nnz: 6571656
+Got nnz: 6586323
+Got nnz: 6606733
+Got nnz: 6628232
+Got nnz: 6568614
+Got nnz: 6542316
+Got nnz: 6544294
+Got nnz: 6596225
+Got nnz: 6594436
+Got nnz: 6586045
+Got nnz: 6590273
+Got nnz: 6601973
+Got nnz: 6602309
+Got nnz: 6529228
+Got nnz: 6578753
+Got nnz: 6530252
+Got nnz: 6531458
+Got nnz: 6589201
+Got nnz: 6562144
+Got nnz: 6583943
+Got nnz: 6570378
+Got nnz: 6576615
+Got nnz: 6575199
+Got nnz: 6561338
+Got nnz: 6548710
+Got nnz: 6562520
+Got nnz: 6566356
+Got nnz: 6545759
+Got nnz: 6574388
+Got nnz: 6582064
+Got nnz: 6554521
+Got nnz: 6568614
+Got nnz: 6552226
+Got nnz: 6568505
+Got nnz: 6661705
+Got nnz: 6551591
+Got nnz: 6742382
+Got nnz: 6590203
+Got nnz: 6580553
+Got nnz: 6574656
+Got nnz: 6588911
+Got nnz: 6543214
+Got nnz: 6546428
+Got nnz: 6593816
+Got nnz: 6895596
+Got nnz: 6704353
+Got nnz: 6628232
+Got nnz: 6656845
+Got nnz: 6657171
+Got nnz: 6602168
+Got nnz: 6621051
+Got nnz: 6616672
+Got nnz: 6631545
+Got nnz: 6606733
+Got nnz: 6724383
+Got nnz: 6584067
+Got nnz: 6947546
+Got nnz: 6631545
+Got nnz: 6602168
+Got nnz: 6532449
+Got nnz: 6607168
+Got nnz: 6944110
+Got nnz: 6653493
+Got nnz: 6741348
+Got nnz: 6548785
+Got nnz: 6656845
+Got nnz: 6704353
+Got nnz: 6536547
+Got nnz: 6724383
+Got nnz: 6967408
+Got nnz: 6641626
+Got nnz: 6604086
+Got nnz: 6651080
+Got nnz: 6741348
+Got nnz: 6544076
+Got nnz: 6712258
+Got nnz: 6561715
+Got nnz: 6560808
+Got nnz: 6626108
+Got nnz: 6673044
+Got nnz: 6618540
+Got nnz: 6597392
+Got nnz: 6587095
+Got nnz: 6626581
+Got nnz: 6593809
+Got nnz: 6543633
+Got nnz: 6612026
+Got nnz: 6538832
+Got nnz: 6583674
+Got nnz: 6608284
+Got nnz: 6705686
+Got nnz: 6618894
+Got nnz: 6531458
+Got nnz: 6590273
+Got nnz: 6583943
+Got nnz: 6615220
+Got nnz: 6579473
+Got nnz: 6556245
+Got nnz: 6601973
+Got nnz: 6589201
+Got nnz: 6532449
+Got nnz: 6581948
+Got nnz: 6542316
+Got nnz: 6586045
+Got nnz: 6591907
+[graphalytics-graphmat:04548] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[graphalytics-graphmat:04548] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Got nnz: 6604127
+Got nnz: 6712258
+Got nnz: 6543633
+Got nnz: 6544294
+Got nnz: 6655812
+Got nnz: 6597392
+Got nnz: 6651080
+Got nnz: 6868200
+Got nnz: 6575199
+Got nnz: 6594436
+Got nnz: 6593809
+Got nnz: 6586323
+Got nnz: 6536547
+Got nnz: 6571656
+Got nnz: 6604086
+Got nnz: 6582941
+Got nnz: 6596225
+Got nnz: 6706872
+Got nnz: 6570378
+Got nnz: 6548785
+Got nnz: 6663950
+Got nnz: 6602309
+Got nnz: 6645992
+Got nnz: 6919372
+Got nnz: 6607168
+Got nnz: 6772807
+Got nnz: 6645992
+Got nnz: 6618894
+Got nnz: 6626108
+Got nnz: 6617153
+Got nnz: 6973430
+Got nnz: 6653493
+Got nnz: 6701868
+Got nnz: 6641626
+Got nnz: 6582941
+Got nnz: 6608284
+Got nnz: 6634088
+Got nnz: 6649297
+Got nnz: 6618540
+Got nnz: 6580384
+Got nnz: 6706872
+Got nnz: 6634088
+Got nnz: 6705694
+Got nnz: 6582255
+Got nnz: 6758768
+Got nnz: 6906648
+Got nnz: 7008948
+Got nnz: 6595995
+Got nnz: 6663950
+Got nnz: 6571887
+Got nnz: 6772807
+Got nnz: 6617153
+Got nnz: 6948550
+Got nnz: 6529228
+Got nnz: 6630321
+Got nnz: 6758768
+Got nnz: 6701868
+Got nnz: 6636630
+Got nnz: 6562520
+Got nnz: 6601711
+Got nnz: 6570845
+Got nnz: 6545759
+Got nnz: 6552226
+Got nnz: 6732782
+Got nnz: 6649297
+Got nnz: 6939188
+Got nnz: 6715481
+Got nnz: 6705694
+Got nnz: 6544076
+Got nnz: 6568505
+Got nnz: 6570867
+Got nnz: 6562144
+Got nnz: 6966104
+Got nnz: 6705686
+Got nnz: 6732782
+Got nnz: 6548710
+Got nnz: 6612026
+Got nnz: 6581948
+Got nnz: 6551591
+Got nnz: 6587865
+Got nnz: 6580384
+Got nnz: 6581837
+Got nnz: 6576615
+Got nnz: 6556245
+Got nnz: 6570975
+Got nnz: 6530252
+Got nnz: 6591084
+Got nnz: 6587095
+Got nnz: 6715481
+Got nnz: 6583674
+Got nnz: 6570867
+Got nnz: 6636630
+Got nnz: 6612856
+Got nnz: 6605762
+Got nnz: 6591907
+Got nnz: 6580553
+Got nnz: 6957942
+Got nnz: 6578753
+Got nnz: 6581837
+Got nnz: 6561338
+Got nnz: 6561715
+Got nnz: 6560808
+Got nnz: 6571887
+Got nnz: 6622265
+Got nnz: 6566356
+Got nnz: 6570845
+Got nnz: 6732394
+Got nnz: 6655294
+Got nnz: 6570975
+Got nnz: 6582064
+Got nnz: 6590203
+Got nnz: 6655812
+Got nnz: 6574388
+Got nnz: 6673044
+Got nnz: 6654149
+Got nnz: 6595995
+Got nnz: 6626581
+Got nnz: 6655294
+Got nnz: 6543214
+Got nnz: 6582255
+Got nnz: 6938842
+Got nnz: 6621051
+Got nnz: 6615220
+Got nnz: 6546428
+Got nnz: 6726918
+Got nnz: 6579473
+Got nnz: 6604127
+Got nnz: 6538832
+Got nnz: 6612856
+Got nnz: 6657171
+Got nnz: 6732394
+Got nnz: 6544294
+Got nnz: 6630321
+Got nnz: 6661705
+Got nnz: 6601711
+Got nnz: 6622265
+Got nnz: 6586323
+Got nnz: 6588911
+Got nnz: 6542316
+Got nnz: 6591084
+Got nnz: 6616672
+Got nnz: 6529228
+Got nnz: 6587865
+Got nnz: 6732192
+Got nnz: 6605762
+Got nnz: 6571656
+Got nnz: 6554521
+Got nnz: 6576615
+Got nnz: 6601973
+Got nnz: 6654149
+Got nnz: 6530252
+Got nnz: 6726918
+Got nnz: 6586045
+Got nnz: 6562144
+Got nnz: 6742382
+Got nnz: 6940420
+Got nnz: 6596225
+Got nnz: 6574388
+Got nnz: 6742382
+Got nnz: 6584067
+Got nnz: 6531458
+Got nnz: 6732192
+Got nnz: 6940214
+Got nnz: 6578753
+Got nnz: 6554521
+Got nnz: 6661705
+Got nnz: 6545759
+Got nnz: 6568614
+Got nnz: 6548710
+Got nnz: 6574656
+Got nnz: 6590273
+Got nnz: 6561338
+Got nnz: 6895596
+Got nnz: 6593816
+Got nnz: 6602168
+Got nnz: 6552226
+Got nnz: 6602309
+Got nnz: 6628232
+Got nnz: 6568614
+Got nnz: 6606733
+Got nnz: 6704353
+Got nnz: 6631545
+Got nnz: 6588911
+Got nnz: 6583943
+Got nnz: 6546428
+Got nnz: 6589201
+Got nnz: 6574656
+Got nnz: 6562520
+Got nnz: 6532449
+Got nnz: 6548785
+Got nnz: 6621051
+Got nnz: 6594436
+Got nnz: 6582064
+Got nnz: 6536547
+Got nnz: 6607168
+Got nnz: 6656845
+Got nnz: 6575199
+Got nnz: 6570378
+Got nnz: 6947546
+Got nnz: 6568505
+Got nnz: 6631545
+Got nnz: 6551591
+Got nnz: 6724383
+Got nnz: 6560808
+Got nnz: 6544076
+Got nnz: 6704353
+Got nnz: 6543214
+Got nnz: 6587095
+Got nnz: 6653493
+Got nnz: 6628232
+Got nnz: 6561715
+Got nnz: 6566356
+Got nnz: 6580553
+Got nnz: 6590203
+Got nnz: 6651080
+Got nnz: 6604086
+Got nnz: 6657171
+Got nnz: 6590273
+Got nnz: 6616672
+Got nnz: 6538832
+Got nnz: 6641626
+Got nnz: 6543633
+Got nnz: 6602168
+Got nnz: 6601973
+Got nnz: 6673044
+Got nnz: 6531458
+Got nnz: 6741348
+Got nnz: 6593816
+Got nnz: 6584067
+Got nnz: 6612026
+Got nnz: 6606733
+Got nnz: 6583674
+Got nnz: 6656845
+Got nnz: 6712258
+Got nnz: 6532449
+Got nnz: 6581948
+Got nnz: 6626581
+Got nnz: 6724383
+Got nnz: 6712258
+Got nnz: 6583943
+Got nnz: 6651080
+Got nnz: 6543633
+Got nnz: 6618540
+Got nnz: 6944110
+Got nnz: 6542316
+Got nnz: 6741348
+Got nnz: 6967408
+Got nnz: 6582941
+Got nnz: 6868200
+Got nnz: 6597392
+Got nnz: 6586045
+Got nnz: 6586323
+Got nnz: 6589201
+Got nnz: 6706872
+Got nnz: 6597392
+Got nnz: 6593809
+Got nnz: 6645992
+Got nnz: 6705686
+Got nnz: 6579473
+Got nnz: 6536547
+Got nnz: 6626108
+Got nnz: 6604086
+Got nnz: 6607168
+Got nnz: 6618894
+Got nnz: 6556245
+Got nnz: 6608284
+Got nnz: 6593809
+Got nnz: 6663950
+Got nnz: 6591907
+Got nnz: 6544294
+Got nnz: 6575199
+Got nnz: 6645992
+Got nnz: 6706872
+Got nnz: 6973430
+Got nnz: 6615220
+Got nnz: 6571656
+Got nnz: 6655812
+Got nnz: 6604127
+Got nnz: 6772807
+Got nnz: 6596225
+Got nnz: 6548785
+Got nnz: 6618894
+Got nnz: 6653493
+Got nnz: 6594436
+Got nnz: 6602309
+Got nnz: 6570378
+Got nnz: 6641626
+Got nnz: 6582941
+Got nnz: 6758768
+Got nnz: 6663950
+Got nnz: 6626108
+Got nnz: 6618540
+Got nnz: 6608284
+Got nnz: 6772807
+Got nnz: 7008948
+Got nnz: 6758768
+Got nnz: 6948550
+Finished GraphMat read + construction, time: 12.9993
+Finished GraphMat read + construction, time: 12.9993
+Finished GraphMat read + construction, time: 12.9995
+Finished GraphMat read + construction, time: 12.9994
+Finished GraphMat read + construction, time: 12.9994
+Finished GraphMat read + construction, time: 12.9994
+Finished GraphMat read + construction, time: 12.9996
+Finished GraphMat read + construction, time: 12.9993
+Finished GraphMat read + construction, time: 12.9993
+Finished GraphMat read + construction, time: 12.9994
+Finished GraphMat read + construction, time: 12.9993
+Finished GraphMat read + construction, time: 12.9995
+Finished GraphMat read + construction, time: 12.9995
+Finished GraphMat read + construction, time: 12.9995
+Finished GraphMat read + construction, time: 12.9996
+Finished GraphMat read + construction, time: 12.9994
+Processing starts at: 1534514523543
+
+Completed 10 iterations 
+Processing ends at: 1534514557302
+
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Completed 10 iterations 
+Timing results:
+ - load graph: 13 sec
+ - initialize engine: 0.190648 sec
+ - run algorithm: 33.7861 sec
+ - print output: 0.518307 sec
+ - deinitialize engine: 0.677935 sec
+Timing results:
+ - load graph: 13.0003 sec
+ - initialize engine: 0.200957 sec
+ - run algorithm: 33.7755 sec
+ - print output: 0.474302 sec
+ - deinitialize engine: 0.739586 sec
+Timing results:
+ - load graph: 13.0001 sec
+ - initialize engine: 0.22404 sec
+ - run algorithm: 33.7525 sec
+ - print output: 0.486211 sec
+ - deinitialize engine: 0.738949 sec
+Timing results:
+ - load graph: 12.9999 sec
+ - initialize engine: 0.197971 sec
+ - run algorithm: 33.7788 sec
+ - print output: 0.510171 sec
+ - deinitialize engine: 0.727066 sec
+Timing results:
+ - load graph: 13.0001 sec
+ - initialize engine: 0.203687 sec
+ - run algorithm: 33.7728 sec
+ - print output: 0.478583 sec
+ - deinitialize engine: 0.766694 sec
+Timing results:
+ - load graph: 12.9998 sec
+ - initialize engine: 0.207168 sec
+ - run algorithm: 33.7697 sec
+ - print output: 0.525399 sec
+ - deinitialize engine: 0.72145 sec
+Timing results:
+ - load graph: 13.0001 sec
+ - initialize engine: 0.20763 sec
+ - run algorithm: 33.7692 sec
+ - print output: 0.521979 sec
+ - deinitialize engine: 0.732871 sec
+Timing results:
+ - load graph: 13.0002 sec
+ - initialize engine: 0.199367 sec
+ - run algorithm: 33.7773 sec
+ - print output: 0.50659 sec
+ - deinitialize engine: 0.759758 sec
+Timing results:
+ - load graph: 12.9999 sec
+ - initialize engine: 0.193549 sec
+ - run algorithm: 33.783 sec
+ - print output: 0.493446 sec
+ - deinitialize engine: 0.77648 sec
+Timing results:
+ - load graph: 13.0003 sec
+ - initialize engine: 0.209342 sec
+ - run algorithm: 33.7672 sec
+ - print output: 0.482418 sec
+ - deinitialize engine: 0.790969 sec
+Timing results:
+ - load graph: 13.0003 sec
+ - initialize engine: 0.198364 sec
+ - run algorithm: 33.7783 sec
+ - print output: 0.514719 sec
+ - deinitialize engine: 0.762883 sec
+Timing results:
+ - load graph: 13.0002 sec
+ - initialize engine: 0.213772 sec
+ - run algorithm: 33.7628 sec
+ - print output: 0.4899 sec
+ - deinitialize engine: 0.79495 sec
+Timing results:
+ - load graph: 13 sec
+ - initialize engine: 0.225529 sec
+ - run algorithm: 33.7511 sec
+ - print output: 0.470642 sec
+ - deinitialize engine: 0.816593 sec
+Timing results:
+ - load graph: 13.0004 sec
+ - initialize engine: 0.197479 sec
+ - run algorithm: 33.7789 sec
+ - print output: 0.499008 sec
+ - deinitialize engine: 0.809854 sec
+Timing results:
+ - load graph: 13 sec
+ - initialize engine: 0.229374 sec
+ - run algorithm: 33.7472 sec
+ - print output: 0.502967 sec
+ - deinitialize engine: 0.837583 sec
+Timing results:
+ - load graph: 13.0004 sec
+ - initialize engine: 0.21687 sec
+ - run algorithm: 33.7593 sec
+ - print output: 16.4951 sec
+ - deinitialize engine: 0.98139 sec
+Report execution r813951 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r813951 at akka.tcp://executor-service@localhost:8011/user/executor-service.

@@ -1,0 +1,212 @@
+23:03 [INFO ] 
+23:03 [INFO ] ###################################################################################
+23:03 [INFO ] ###################################################################################
+23:03 [INFO ] ##                                                                               ##
+23:03 [INFO ] ##                                                                               ##
+23:03 [INFO ] ##                 Graphalytics benchmark for GRAPHLESS platform                 ##
+23:03 [INFO ] ##                                                                               ##
+23:03 [INFO ] ##                                                                               ##
+23:03 [INFO ] ###################################################################################
+23:03 [INFO ] ###################################################################################
+23:03 [INFO ] 
+23:03 [ERROR] Failed to load versioning information from /project/build/graphalytics-core.properties.
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [ERROR] Failed to load versioning information from /project/build/platform.properties.
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] Executing a CUSTOM Benchmark on GRAPHLESS [1 experiments, 5 jobs, 5 runs]:
+23:03 [INFO ]  Experiment custom:exp contains 5 jobs: [dota-league(1x), dota-league(1x), dota-league(1x), dota-league(1x), dota-league(1x)]
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] Benchmark started: 2018/August/27 21:03:29 UTC.
+23:03 [INFO ] 
+23:03 [INFO ] Reporting Benchmark Results...
+23:03 [INFO ] 
+23:03 [INFO ] Preparing graph "dota-league" with 2 different formats: [dota-league, dota-league.e_weight]
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] Preprocessing graph "dota-league:dota-league.e_weight" for 1 benchmark run(s).
+23:03 [INFO ] Formatting (Minimizing) graph ""dota-league:dota-league.e_weight""
+23:03 [INFO ] Found vertex file for graph "dota-league" at "/home/chef/thesis/graph-datasets/dota-league.v".
+23:03 [INFO ] Found edge file for graph "dota-league.e_weight" at "/home/chef/thesis/graph-datasets/dota-league.e".
+23:03 [INFO ] Formatted (Minimizing) graph ""dota-league:dota-league.e_weight""
+23:03 [INFO ] ----------------- Loading graph ""dota-league:dota-league.e_weight"" -----------------
+23:03 [INFO ] Loading graph dota-league.e_weight
+23:03 [INFO ] Loaded graph dota-league.e_weight
+23:03 [INFO ] ----------------- Loaded graph ""dota-league:dota-league.e_weight"" -----------------
+23:03 [INFO ] The loading process finished within 1 seconds
+23:03 [INFO ] 
+23:03 [INFO ] 
+23:03 [INFO ] ============= Benchmark r550409 [1/5] =============
+23:03 [INFO ] Benchmark specification: [BenchmarkRun [r550409, SSSP[src=287770, prop=weight], dota-league, timeout=9600s]]
+23:03 [INFO ] Benchmark configuration: [output=enabled, validation=enabled]
+23:03 [INFO ] Log directory: [report/180827-230329-GRAPHLESS-report-CUSTOM/log/r550409-SSSP-dota-league]
+23:03 [INFO ] Input file (vertex): [/home/chef/thesis/graph-datasets/dota-league.v]
+23:03 [INFO ] Input file (edge): [/home/chef/thesis/graph-datasets/dota-league.e]
+23:03 [INFO ] Output directory: [./output/r550409-SSSP-dota-league]
+23:03 [INFO ] Validation directory: [/home/chef/thesis/graph-datasets/dota-league-SSSP]
+23:03 [INFO ] 
+23:03 [INFO ] The preparation for the benchmark succeed (if needed).
+23:03 [INFO ] The benchmark runner becomes ready within 1 seconds.
+23:13 [INFO ] The execution process finished within 584 seconds.
+23:13 [INFO ] The validation process finished within 0 seconds.
+23:13 [INFO ] The benchmark results are retrieved.
+23:13 [WARN ] Terminating runner process forcibly.
+23:13 [WARN ] Terminating process 1866 focibly.
+23:13 [WARN ] Executing command "kill -9 1866"
+23:13 [ERROR] Failed to kill runner process.
+23:13 [INFO ] The benchmark run is sucessfully terminated.
+23:13 [INFO ] Benchmark r550409is succeed, T_l=1.358s, T_m=583.505s, T_p=279.333346427s.
+23:13 [INFO ] ============= Benchmark r550409 [2/5] =============
+23:13 [INFO ] 
+23:13 [INFO ] 
+23:13 [INFO ] Deleting graph "dota-league:dota-league.e_weight".
+23:13 [INFO ] ----------------- Deleting graph ""dota-league:dota-league.e_weight"" -----------------
+23:13 [INFO ] Unloading graph dota-league.e_weight
+23:13 [INFO ] Unloading graph. deleteJobMetadata: true
+23:13 [INFO ] Unloaded graph dota-league.e_weight
+23:13 [INFO ] ----------------- Deleted graph ""dota-league:dota-league.e_weight"" -----------------
+23:13 [INFO ] 
+23:13 [INFO ] 
+23:13 [INFO ] Preprocessing graph "dota-league:dota-league" for 4 benchmark run(s).
+23:13 [INFO ] Formatting (Minimizing) graph ""dota-league:dota-league""
+23:13 [INFO ] Found vertex file for graph "dota-league" at "/home/chef/thesis/graph-datasets/dota-league.v".
+23:13 [INFO ] Found edge file for graph "dota-league" at "/home/chef/thesis/graph-datasets/cache/dota-league.e".
+23:13 [INFO ] Formatted (Minimizing) graph ""dota-league:dota-league""
+23:13 [INFO ] ----------------- Loading graph ""dota-league:dota-league"" -----------------
+23:13 [INFO ] Loading graph dota-league
+23:13 [INFO ] Loaded graph dota-league
+23:13 [INFO ] ----------------- Loaded graph ""dota-league:dota-league"" -----------------
+23:13 [INFO ] The loading process finished within 0 seconds
+23:13 [INFO ] 
+23:13 [INFO ] 
+23:13 [INFO ] ============= Benchmark r687129 [2/5] =============
+23:13 [INFO ] Benchmark specification: [BenchmarkRun [r687129, BFS[src=287770], dota-league, timeout=9600s]]
+23:13 [INFO ] Benchmark configuration: [output=enabled, validation=enabled]
+23:13 [INFO ] Log directory: [report/180827-230329-GRAPHLESS-report-CUSTOM/log/r687129-BFS-dota-league]
+23:13 [INFO ] Input file (vertex): [/home/chef/thesis/graph-datasets/dota-league.v]
+23:13 [INFO ] Input file (edge): [/home/chef/thesis/graph-datasets/cache/dota-league.e]
+23:13 [INFO ] Output directory: [./output/r687129-BFS-dota-league]
+23:13 [INFO ] Validation directory: [/home/chef/thesis/graph-datasets/dota-league-BFS]
+23:13 [INFO ] 
+23:13 [INFO ] The preparation for the benchmark succeed (if needed).
+23:13 [INFO ] The benchmark runner becomes ready within 1 seconds.
+23:18 [INFO ] The execution process finished within 303 seconds.
+23:18 [INFO ] The validation process finished within 0 seconds.
+23:18 [INFO ] The benchmark results are retrieved.
+23:18 [WARN ] Terminating runner process forcibly.
+23:18 [WARN ] Terminating process 2596 focibly.
+23:18 [WARN ] Executing command "kill -9 2596"
+23:18 [ERROR] Failed to kill runner process.
+23:18 [INFO ] The benchmark run is sucessfully terminated.
+23:18 [INFO ] Benchmark r687129is succeed, T_l=0.174s, T_m=302.691s, T_p=52.103672864s.
+23:18 [INFO ] ============= Benchmark r687129 [3/5] =============
+23:18 [INFO ] 
+23:18 [INFO ] 
+23:18 [INFO ] 
+23:18 [INFO ] ============= Benchmark r650963 [3/5] =============
+23:18 [INFO ] Benchmark specification: [BenchmarkRun [r650963, PR[damp=0.85, iter=10], dota-league, timeout=9600s]]
+23:18 [INFO ] Benchmark configuration: [output=enabled, validation=enabled]
+23:18 [INFO ] Log directory: [report/180827-230329-GRAPHLESS-report-CUSTOM/log/r650963-PR-dota-league]
+23:18 [INFO ] Input file (vertex): [/home/chef/thesis/graph-datasets/dota-league.v]
+23:18 [INFO ] Input file (edge): [/home/chef/thesis/graph-datasets/cache/dota-league.e]
+23:18 [INFO ] Output directory: [./output/r650963-PR-dota-league]
+23:18 [INFO ] Validation directory: [/home/chef/thesis/graph-datasets/dota-league-PR]
+23:18 [INFO ] 
+23:18 [INFO ] The preparation for the benchmark succeed (if needed).
+23:18 [INFO ] The benchmark runner becomes ready within 1 seconds.
+23:30 [INFO ] The execution process finished within 679 seconds.
+23:30 [INFO ] The validation process finished within 0 seconds.
+23:30 [INFO ] The benchmark results are retrieved.
+23:30 [WARN ] Terminating runner process forcibly.
+23:30 [WARN ] Terminating process 3228 focibly.
+23:30 [WARN ] Executing command "kill -9 3228"
+23:30 [ERROR] Failed to kill runner process.
+23:30 [INFO ] The benchmark run is sucessfully terminated.
+23:30 [INFO ] Benchmark r650963is succeed, T_l=0.174s, T_m=678.057s, T_p=426.322482882s.
+23:30 [INFO ] ============= Benchmark r650963 [4/5] =============
+23:30 [INFO ] 
+23:30 [INFO ] 
+23:30 [INFO ] 
+23:30 [INFO ] ============= Benchmark r619303 [4/5] =============
+23:30 [INFO ] Benchmark specification: [BenchmarkRun [r619303, WCC[none], dota-league, timeout=9600s]]
+23:30 [INFO ] Benchmark configuration: [output=enabled, validation=enabled]
+23:30 [INFO ] Log directory: [report/180827-230329-GRAPHLESS-report-CUSTOM/log/r619303-WCC-dota-league]
+23:30 [INFO ] Input file (vertex): [/home/chef/thesis/graph-datasets/dota-league.v]
+23:30 [INFO ] Input file (edge): [/home/chef/thesis/graph-datasets/cache/dota-league.e]
+23:30 [INFO ] Output directory: [./output/r619303-WCC-dota-league]
+23:30 [INFO ] Validation directory: [/home/chef/thesis/graph-datasets/dota-league-WCC]
+23:30 [INFO ] 
+23:30 [INFO ] The preparation for the benchmark succeed (if needed).
+23:30 [INFO ] The benchmark runner becomes ready within 1 seconds.
+23:35 [INFO ] The execution process finished within 339 seconds.
+23:35 [INFO ] The validation process finished within 0 seconds.
+23:35 [INFO ] The benchmark results are retrieved.
+23:35 [WARN ] Terminating runner process forcibly.
+23:35 [WARN ] Terminating process 9590 focibly.
+23:35 [WARN ] Executing command "kill -9 9590"
+23:35 [ERROR] Failed to kill runner process.
+23:36 [INFO ] The benchmark run is sucessfully terminated.
+23:36 [INFO ] Benchmark r619303is succeed, T_l=0.174s, T_m=338.356s, T_p=88.573881975s.
+23:36 [INFO ] ============= Benchmark r619303 [5/5] =============
+23:36 [INFO ] 
+23:36 [INFO ] 
+23:36 [INFO ] 
+23:36 [INFO ] ============= Benchmark r592338 [5/5] =============
+23:36 [INFO ] Benchmark specification: [BenchmarkRun [r592338, CDLP[iter=10], dota-league, timeout=9600s]]
+23:36 [INFO ] Benchmark configuration: [output=enabled, validation=enabled]
+23:36 [INFO ] Log directory: [report/180827-230329-GRAPHLESS-report-CUSTOM/log/r592338-CDLP-dota-league]
+23:36 [INFO ] Input file (vertex): [/home/chef/thesis/graph-datasets/dota-league.v]
+23:36 [INFO ] Input file (edge): [/home/chef/thesis/graph-datasets/cache/dota-league.e]
+23:36 [INFO ] Output directory: [./output/r592338-CDLP-dota-league]
+23:36 [INFO ] Validation directory: [/home/chef/thesis/graph-datasets/dota-league-CDLP]
+23:36 [INFO ] 
+23:36 [INFO ] The preparation for the benchmark succeed (if needed).
+23:36 [INFO ] The benchmark runner becomes ready within 1 seconds.
+23:46 [INFO ] The execution process finished within 652 seconds.
+23:46 [INFO ] The validation process finished within 0 seconds.
+23:46 [INFO ] The benchmark results are retrieved.
+23:46 [WARN ] Terminating runner process forcibly.
+23:46 [WARN ] Terminating process 14698 focibly.
+23:46 [WARN ] Executing command "kill -9 14698"
+23:46 [ERROR] Failed to kill runner process.
+23:47 [INFO ] The benchmark run is sucessfully terminated.
+23:47 [INFO ] Benchmark r592338is succeed, T_l=0.174s, T_m=651.078s, T_p=403.203653072s.
+23:47 [INFO ] ============= Benchmark r592338 [6/5] =============
+23:47 [INFO ] 
+23:47 [INFO ] 
+23:47 [INFO ] Deleting graph "dota-league:dota-league".
+23:47 [INFO ] ----------------- Deleting graph ""dota-league:dota-league"" -----------------
+23:47 [INFO ] Unloading graph dota-league
+23:47 [INFO ] Unloading graph. deleteJobMetadata: true
+23:47 [INFO ] Unloaded graph dota-league
+23:47 [INFO ] ----------------- Deleted graph ""dota-league:dota-league"" -----------------
+23:47 [INFO ] 
+23:47 [INFO ] 
+23:47 [INFO ] Reporting benchmark summary:
+23:47 [INFO ] [BenchmarkRun [r550409, SSSP[src=287770, prop=weight], dota-league, timeout=9600s]] => succeed, T_l=1.358s, T_m=583.505s, T_p=279.333346427s.
+23:47 [INFO ] [BenchmarkRun [r687129, BFS[src=287770], dota-league, timeout=9600s]] => succeed, T_l=0.174s, T_m=302.691s, T_p=52.103672864s.
+23:47 [INFO ] [BenchmarkRun [r619303, WCC[none], dota-league, timeout=9600s]] => succeed, T_l=0.174s, T_m=338.356s, T_p=88.573881975s.
+23:47 [INFO ] [BenchmarkRun [r650963, PR[damp=0.85, iter=10], dota-league, timeout=9600s]] => succeed, T_l=0.174s, T_m=678.057s, T_p=426.322482882s.
+23:47 [INFO ] [BenchmarkRun [r592338, CDLP[iter=10], dota-league, timeout=9600s]] => succeed, T_l=0.174s, T_m=651.078s, T_p=403.203653072s.
+23:47 [INFO ] In total, [5 / 5] benchmark(s) succeed.
+23:47 [INFO ] Wrote benchmark report of type "html" to "report/180827-230329-GRAPHLESS-report-CUSTOM".
+23:47 [INFO ] 
+23:47 [INFO ] Benchmark ended: 2018/August/27 21:47:10 UTC.
+23:47 [INFO ] 
+23:47 [INFO ] 
+23:47 [INFO ] ###################################################################################
+23:47 [INFO ] ###################################################################################
+23:47 [INFO ] ##                                                                               ##
+23:47 [INFO ] ##                                                                               ##
+23:47 [INFO ] ##                 Graphalytics benchmark for GRAPHLESS platform                 ##
+23:47 [INFO ] ##                                                                               ##
+23:47 [INFO ] ##                                                                               ##
+23:47 [INFO ] ###################################################################################
+23:47 [INFO ] ###################################################################################
+23:47 [INFO ] 
+23:47 [INFO ] Terminating Benchmark Suite.

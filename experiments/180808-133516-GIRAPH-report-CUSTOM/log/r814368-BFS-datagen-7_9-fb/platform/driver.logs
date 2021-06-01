@@ -1,0 +1,8 @@
+StartTime: 1533739557267
+Runner executing benchmark r814368.
+Executing algorithm "Breadth first search" on graph "datagen-7_9-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r814368_BFS-datagen-7_9-fb at hdfs.
+Report execution r814368 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r814368 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533739597154

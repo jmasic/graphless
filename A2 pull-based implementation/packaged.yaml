@@ -1,0 +1,128 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'thesis-go
+
+  Test execution for Go2
+
+  '
+Globals:
+  Function:
+    Environment:
+      Variables:
+        EnableTracing:
+          Ref: EnableTracingParameter
+        thundra_apiKey: ae0b056c-8574-47a1-a1a9-6379afd01141
+    MemorySize: 1024
+    Timeout: 300
+Mappings:
+  Constants:
+    FunctionNames:
+      MainFunction: MainFunction
+      OrchestratorFunction: OrchestratorFunction
+      WorkerFunction: WorkerFunction
+Parameters:
+  EnableTracingParameter:
+    AllowedValues:
+    - true
+    - false
+    Default: false
+    Description: Enter true to enable tracing. Default is false
+    Type: String
+Resources:
+  MainFunction:
+    Properties:
+      CodeUri: s3://thesis-code-cloudformation/edb68297da2204f7c960fc2b07f62fa1
+      Environment:
+        Variables:
+          MESSAGE: Test message
+          ORCHESTRATOR_FUNCTION_NAME:
+            Fn::FindInMap:
+            - Constants
+            - FunctionNames
+            - OrchestratorFunction
+      FunctionName:
+        Fn::FindInMap:
+        - Constants
+        - FunctionNames
+        - MainFunction
+      Handler: main_function
+      MemorySize: 3008
+      Role:
+        Fn::GetAtt:
+        - MainFunctionRole
+        - Arn
+      Runtime: go1.x
+    Type: AWS::Serverless::Function
+  MainFunctionRole:
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Action:
+          - sts:AssumeRole
+          Effect: Allow
+          Principal:
+            Service:
+            - lambda.amazonaws.com
+        Version: 2012-10-17
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/AWSLambdaExecute
+      - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+      Path: /MainFunctionRole/
+      Policies:
+      - PolicyDocument:
+          Statement:
+          - Action:
+            - lambda:InvokeFunction
+            Effect: Allow
+            Resource:
+            - '*'
+        PolicyName: invokeLambda
+    Type: AWS::IAM::Role
+  OrchestratorFunction:
+    Properties:
+      CodeUri: s3://thesis-code-cloudformation/fc5951173fb787b69de4101524618052
+      Environment:
+        Variables:
+          MESSAGE: Test message
+          WORKER_FUNCTION_NAME:
+            Fn::FindInMap:
+            - Constants
+            - FunctionNames
+            - WorkerFunction
+      FunctionName:
+        Fn::FindInMap:
+        - Constants
+        - FunctionNames
+        - OrchestratorFunction
+      Handler: orchestrator_function
+      MemorySize: 3008
+      Role:
+        Fn::GetAtt:
+        - MainFunctionRole
+        - Arn
+      Runtime: go1.x
+    Type: AWS::Serverless::Function
+  WorkerFunction:
+    Properties:
+      CodeUri: s3://thesis-code-cloudformation/11dbff5ce7a92741858e58bd72317e87
+      Environment:
+        Variables:
+          MESSAGE: Test message
+          ORCHESTRATOR_FUNCTION_NAME:
+            Fn::FindInMap:
+            - Constants
+            - FunctionNames
+            - OrchestratorFunction
+      FunctionName:
+        Fn::FindInMap:
+        - Constants
+        - FunctionNames
+        - WorkerFunction
+      Handler: worker_function
+      MemorySize: 1600
+      Role:
+        Fn::GetAtt:
+        - MainFunctionRole
+        - Arn
+      Runtime: go1.x
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

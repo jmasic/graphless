@@ -1,0 +1,23 @@
+StartTime: 1533736170353
+Runner executing benchmark r656497.
+Executing algorithm "Local clustering coefficient" on graph "datagen-8_4-fb".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r656497_LCC-datagen-8_4-fb at hdfs.
+Algorithm "Local clustering coefficient" on graph "datagen-8_4-fb failed to complete:
+science.atlarge.graphalytics.execution.PlatformExecutionException: Giraph job completed with exit code = -1
+	at science.atlarge.graphalytics.giraph.GiraphPlatform.run(GiraphPlatform.java:260) ~[graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at science.atlarge.graphalytics.execution.BenchmarkRunner.run(BenchmarkRunner.java:113) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at science.atlarge.graphalytics.execution.RunnerService.onReceive(RunnerService.java:148) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.actor.UntypedActor$$anonfun$receive$1.applyOrElse(UntypedActor.scala:167) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.actor.UntypedActor.aroundReceive(UntypedActor.scala:97) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [graphalytics-platforms-giraph-0.2-SNAPSHOT-default.jar:?]
+Report failures (EXE) of r656497 at akka.tcp://executor-service@localhost:8011/user/executor-service.

@@ -1,0 +1,8 @@
+StartTime: 1533741705966
+Runner executing benchmark r726729.
+Executing algorithm "Breadth first search" on graph "example-undirected".
+- Starting Giraph job
+Deleting output directory: graphalytics/giraph/output/r726729_BFS-example-undirected at hdfs.
+Report execution r726729 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+Report validation for r726729 at akka.tcp://executor-service@localhost:8011/user/executor-service.
+EndTime: 1533741735065

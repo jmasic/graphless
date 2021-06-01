@@ -1,0 +1,17 @@
+2018-08-08 13:43:17,259 [runner-service-akka.actor.default-dispatcher-3] WARN [NativeCodeLoader (<clinit>(62))] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-08-08 13:43:18,124 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapreduce.job.counters.limit is deprecated. Instead, use mapreduce.job.counters.max
+2018-08-08 13:43:18,156 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapred.job.map.memory.mb is deprecated. Instead, use mapreduce.map.memory.mb
+2018-08-08 13:43:18,156 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapred.job.reduce.memory.mb is deprecated. Instead, use mapreduce.reduce.memory.mb
+2018-08-08 13:43:18,156 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapred.map.tasks.speculative.execution is deprecated. Instead, use mapreduce.map.speculative
+2018-08-08 13:43:18,156 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapreduce.user.classpath.first is deprecated. Instead, use mapreduce.job.user.classpath.first
+2018-08-08 13:43:18,157 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapred.map.max.attempts is deprecated. Instead, use mapreduce.map.maxattempts
+2018-08-08 13:43:18,157 [runner-service-akka.actor.default-dispatcher-3] INFO [GiraphJob (run(226))] run: Since checkpointing is disabled (default), do not allow any task retries (setting mapred.map.max.attempts = 1, old value = 4)
+2018-08-08 13:43:18,177 [runner-service-akka.actor.default-dispatcher-3] INFO [deprecation (warnOnceIfDeprecated(1243))] mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2018-08-08 13:43:18,257 [runner-service-akka.actor.default-dispatcher-3] INFO [RMProxy (createRMProxy(98))] Connecting to ResourceManager at graphalytics-giraph/10.164.0.2:8050
+2018-08-08 13:43:19,408 [runner-service-akka.actor.default-dispatcher-3] INFO [JobSubmitter (submitJobInternal(198))] number of splits:14
+2018-08-08 13:43:19,581 [runner-service-akka.actor.default-dispatcher-3] INFO [JobSubmitter (printTokens(287))] Submitting tokens for job: job_1533735211869_0007
+2018-08-08 13:43:19,771 [runner-service-akka.actor.default-dispatcher-3] INFO [YarnClientImpl (submitApplication(273))] Submitted application application_1533735211869_0007
+2018-08-08 13:43:19,809 [runner-service-akka.actor.default-dispatcher-3] INFO [Job (submit(1294))] The url to track the job: http://graphalytics-giraph:8088/proxy/application_1533735211869_0007/
+2018-08-08 13:43:19,809 [runner-service-akka.actor.default-dispatcher-3] INFO [GiraphJob (run(269))] Tracking URL: http://graphalytics-giraph:8088/proxy/application_1533735211869_0007/
+2018-08-08 13:43:19,810 [runner-service-akka.actor.default-dispatcher-3] INFO [GiraphJob (run(270))] Waiting for resources... Job will start only when it gets all 14 mappers
+2018-08-08 13:43:35,836 [runner-service-akka.actor.default-dispatcher-3] INFO [HaltApplicationUtils$DefaultHaltInstructionsWriter (writeHaltInstructions(79))] writeHaltInstructions: To halt after next superstep execute: 'bin/halt-application --zkServer graphalytics-giraph:2181 --zkNode /_hadoopBsp/job_1533735211869_0007/_haltComputation'
