@@ -1,0 +1,1 @@
+{"graphName": "dota-league", "maxWorkers": 400, "extraArgs": {"directed": false}, "chunkSize": 153, "runId":"r895632", "testRun": false, "algorithm": "WCC"}

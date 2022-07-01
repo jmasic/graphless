@@ -1,0 +1,1 @@
+{"graphName": "dota-league", "maxWorkers": 400, "extraArgs": {"sourceVertex":1}, "chunkSize": 30, "runId":"r336699", "testRun": false, "algorithm": "BFS"}

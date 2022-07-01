@@ -1,0 +1,1 @@
+{"graphName": "dota-league", "maxWorkers": 400, "extraArgs": {"numberOfIterations":2,"dampingFactor":0.85}, "chunkSize": 30, "runId":"r766271", "testRun": false, "algorithm": "PR"}

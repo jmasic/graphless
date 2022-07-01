@@ -5,8 +5,7 @@ Graphless is a graph processing system based on the serverless paradigm, which p
 This repository contains:
 * A prototype push-based implementation in AWS Cloud: A1
 * A prototype pull-based implementation in AWS Cloud: A2
+* A prototype implementation, supporting Neo4j, and full support for local runs: A3
+* A prototype implementation, with optimized Neo4j queries, improved loading, and full support for local runs: A4
+* A prototype implementation, supporting Neo4j, with split memory component, further improved loading, full support for local runs, and backend choice done via configuration: A5
 * A set of experiments ran with the Graphalytics benchmarking tool
-
-## Disclaimer
-
-_The code contained in this repository was last updated on 31-Aug-2018 and is provided "as is". Given the fast-paced nature of cloud computing and serverless in particular, adjustments might be required to get it running._

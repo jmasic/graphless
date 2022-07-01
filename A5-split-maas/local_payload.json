@@ -1,0 +1,36 @@
+{
+  "graphName": "dota-league",
+  "maxWorkers": 400,
+  "extraArgs": {"sourceVertex":1},
+  "chunkSize": 30,
+  "runId": "r837924",
+  "testRun": false,
+  "algorithm": "BFS",
+  "memoryClientConfig": {
+    "type": "Neo4j",
+    "db": {
+      "ip": "127.0.0.1",
+      "port": 7687,
+      "username": "neo4j",
+      "password": "n"
+    }
+  },
+  "messageClientConfig": {
+    "type": "Redis",
+    "db": {
+      "ip": "127.0.0.1",
+      "port": 6379,
+      "username": "",
+      "password": "",
+      "shardsCount": 1
+    }
+  },
+  "storageClientConfig": {
+    "type": "Local",
+    "storageConfig": {
+      "bucketName": "../simple-graphs/graphalytics/s3/",
+      "bucketKey": "graphFileKey",
+      "region": "n/a"
+    }
+  }
+}
